@@ -15,6 +15,8 @@ public class ShopItem : MonoBehaviour
     public TMP_Text CostTextElement;
     private static readonly int Locked = Animator.StringToHash("Locked");
 
+    public bool isSelected = false;
+    
     public void Init()
     {
         if (GameManager.Current.skillz.CanDo(skillType))
@@ -41,18 +43,22 @@ public class ShopItem : MonoBehaviour
     {
         animator.SetBool("Selected", true);
         infoRect.Show();
+        isSelected = true;
     }
 
     public void Deselect()
     {
         animator.SetBool("Selected", false);
         infoRect.Hide();
+        isSelected = false;
     }
 
     public void Click()
     {
         if(GameManager.Current.currency.CanAfford(skillCost))
             Shop.Current.BuySkill(this);
+        else
+            Debug.LogError("Cant afford " + skillType);
     }
 
     public void PurchaseSucceeded()

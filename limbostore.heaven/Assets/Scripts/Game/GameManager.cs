@@ -1,4 +1,5 @@
 ﻿using Game;
+using UnityEditor;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -20,4 +21,41 @@ public class GameManager : MonoBehaviour
         Current = this;
     }
 
+    private void Update()
+    {
+        #if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            // cheat!!
+            for (int i = 0; i < System.Enum.GetNames(typeof(SkillType)).Length; i++)
+            {
+                skillz.AddSkill((SkillType) i);
+            }
+            currency.Receive(99999);
+            collectables.hasAllCollectables = true;
+        }
+        #endif
+    }
 }
+
+#if UNITY_EDITOR
+[CustomEditor(typeof(GameManager))]
+public class GameManagerEditor : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        base.OnInspectorGUI();
+        
+        GameManager manager = target as GameManager;
+        if (manager == null)
+            return;
+        
+        GUILayout.Label("Deaths: " + manager.currency.Amount.ToString("N0"));
+        GUILayout.Label("Skills", EditorStyles.boldLabel);
+        for (int i = 0; i < System.Enum.GetNames(typeof(SkillType)).Length; i++)
+        {
+            GUILayout.Label((SkillType) i + " => " + manager.skillz.CanDo((SkillType) i));
+        }
+    }
+}
+#endif

@@ -3,11 +3,15 @@ using UnityEngine;
 
 public class CollectablesManager
 {
+    #if UNITY_EDITOR
+    public bool hasAllCollectables = false;
+    #endif
+    
     private List<string> collectables = new List<string>();
     
     public bool HasCollectable(string collectable)
     {
-        return collectables.Contains(collectable);
+        return collectables.Contains(collectable) || hasAllCollectables;
     }
 
     public void AddCollectable(string collectable)

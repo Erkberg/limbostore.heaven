@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Shop : MonoBehaviour
 {
@@ -33,6 +34,31 @@ public class Shop : MonoBehaviour
         }
 
         selfCanvas.enabled = false;
+    }
+
+    private void Update()
+    {
+        if (!selfCanvas.enabled)
+            return;
+
+        GameObject obj = EventSystem.current.currentSelectedGameObject;
+        if (obj == null)
+            return;
+        
+        ShopItem item = obj.GetComponent<ShopItem>();
+        if (item == null)
+            return;
+
+        if (item.isSelected)
+            return;
+
+        foreach (var other in shopItems)
+        {
+            if(other == item)
+                item.Select();
+            else
+                other.Deselect();
+        }
     }
 
     public void BuySkill(ShopItem item)
