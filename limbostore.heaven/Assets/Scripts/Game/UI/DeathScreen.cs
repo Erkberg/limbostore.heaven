@@ -19,7 +19,7 @@ public class DeathScreen : MonoBehaviour
     {
     }
     
-    void DisplayDeathType(DeathType type, bool firstTimeDeath)
+    public void DisplayDeathType(DeathType type, bool firstTimeDeath)
     {
         titleTextElement.SetText(type.title);
         descriptionTextElement.SetText(type.description + "<br><br> You were rewarded " +
@@ -32,7 +32,7 @@ public class DeathScreen : MonoBehaviour
         animator.SetBool("Active", true);
     }
 
-    void Close()
+    public void Close()
     {
         animator.SetBool("Active", false);
     }

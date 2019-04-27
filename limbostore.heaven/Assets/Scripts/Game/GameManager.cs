@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     #if UNITY_EDITOR
     public DeathType cheatDeathType;
     #endif
+
+    public DeathScreen deathScreen;
     
     private CurrencyManager currencyManager = new CurrencyManager();
     private EventManager eventManager = new EventManager();
@@ -19,6 +21,16 @@ public class GameManager : MonoBehaviour
     public SkillManager skillz => skillzManager;
 
     public static GameManager Current { private set; get; }
+
+    public void TriggerDeath(DeathType deathType)
+    {
+        bool isFirstDeath = currencyManager.GetDeathCount(deathType) == 0;
+        
+        currencyManager.AddDeath(deathType);
+        deathScreen.DisplayDeathType(deathType, isFirstDeath);
+        events.TriggerEvent(EventManager.EventType.Death, deathType.name);
+    }
+    
     
     void Awake()
     {
