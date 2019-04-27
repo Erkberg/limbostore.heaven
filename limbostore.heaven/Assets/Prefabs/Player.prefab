@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3639012661080299703}
+  sprite: {fileID: 3639012660577835053}
   moveSpeed: 4
   movementEnabled: 1
 --- !u!58 &3639012661080299696
