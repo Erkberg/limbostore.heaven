@@ -16,7 +16,14 @@ namespace Game
 
         public bool CanDo(SkillType skillType)
         {
-            return availableSkills[(int) skillType];
+            if(skillType == SkillType.None)
+            {
+                return true;
+            }
+            else
+            {
+                return availableSkills[(int)skillType];
+            }            
         }
     }
 }

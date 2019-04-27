@@ -49,6 +49,7 @@ MonoBehaviour:
   interactionType: 1
   sequenceType: 5
   particles: {fileID: 6832644650306093077}
+  neededSkill: 0
 --- !u!114 &1363534968114509855
 MonoBehaviour:
   m_ObjectHideFlags: 0

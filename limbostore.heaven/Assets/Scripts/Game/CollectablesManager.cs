@@ -7,20 +7,28 @@ public class CollectablesManager
     public bool hasAllCollectables = false;
     #endif
     
-    private List<string> collectables = new List<string>();
+    private List<CollectableName> collectables = new List<CollectableName>();
     
-    public bool HasCollectable(string collectable)
+    public bool HasCollectable(CollectableName collectableName)
     {
-        return collectables.Contains(collectable) || hasAllCollectables;
+        return collectables.Contains(collectableName) || hasAllCollectables;
     }
 
-    public void AddCollectable(string collectable)
+    public void AddCollectable(CollectableName collectableName)
     {
-        if (!collectables.Contains(collectable))
+        if (!collectables.Contains(collectableName))
         {
-            Debug.Log("just collected " + collectable);
-            collectables.Add(collectable);
-            GameManager.Current.events.TriggerEvent(EventManager.EventType.NewCollectable, collectable);
+            Debug.Log("just collected " + collectableName.ToString());
+            collectables.Add(collectableName);
+            GameManager.Current.events.TriggerEvent(EventManager.EventType.NewCollectable, collectableName.ToString());
         }
     }
+}
+
+public enum CollectableName
+{
+    None,
+    CheesyMovie,
+    ScaryMovie,
+    FunnyMovie
 }
