@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
             {
                 skillz.AddSkill((SkillType) i);
             }
-            currency.Receive(99999);
+            currency.AddDeath("cheat", 99999);
             collectables.hasAllCollectables = true;
         }
         #endif
@@ -57,13 +57,17 @@ public class GameManagerEditor : Editor
             GUILayout.Label((SkillType) i + " => " + manager.skillz.CanDo((SkillType) i));
         }
 
+        GUILayout.Label("Deaths (" + manager.currency.GetTotalDeathCount() + ")", EditorStyles.boldLabel);
+        manager.currency.PrintDeathsEditor();
+        
+
         if (GUILayout.Button("Open Shop"))
         {
             GameObject.FindObjectOfType<Shop>().OpenShop();
         }
         if (GUILayout.Button("Get Money"))
         {
-            manager.currency.Receive(100);
+            manager.currency.AddDeath("death", 100);
         }
     }
 }

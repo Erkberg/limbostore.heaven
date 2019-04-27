@@ -1,13 +1,17 @@
-﻿public class CurrencyManager
+﻿using System.Collections.Generic;
+using UnityEngine;
+
+public class CurrencyManager
 {
-    private int availableCoins = 0;
+    private int availableCurrency = 0;
+    private Dictionary<string, int> deaths = new Dictionary<string, int>();
     
     public CurrencyManager()
     {
-        availableCoins = 0;
+        availableCurrency = 0;
     }
 
-    public int Amount => availableCoins;
+    public int Amount => availableCurrency;
     
     /// <summary>
     /// checks if you can afford the item that costs a amount of money
@@ -16,7 +20,7 @@
     /// <returns></returns>
     public bool CanAfford(int amount)
     {
-        return availableCoins >= amount;
+        return availableCurrency >= amount;
     }
 
     /// <summary>
@@ -28,18 +32,43 @@
     {
         if (!CanAfford(amount))
             return false;
-        availableCoins -= amount;
+        availableCurrency -= amount;
         return true;
     }
 
-    /// <summary>
-    /// Store money into the availableCoins. Returns the total amount stored.
-    /// </summary>
-    /// <param name="amount"></param>
-    /// <returns></returns>
-    public int Receive(int amount)
+    public int GetDeathCount(string key)
     {
-        availableCoins += amount;
-        return availableCoins;
+        return !deaths.ContainsKey(key) ? 0 : deaths[key];
     }
+
+    public void AddDeath(string key, int currency)
+    {
+        availableCurrency += currency;
+        if (!deaths.ContainsKey(key))
+        {
+            deaths.Add(key, 1);
+        }
+    }
+
+    public int GetTotalDeathCount()
+    {
+        int deathCount = 0;
+        foreach (var pair in deaths)
+        {
+            deathCount += pair.Value;
+        }
+
+        return deathCount;
+    }
+
+#if UNITY_EDITOR
+    public void PrintDeathsEditor()
+    {
+        foreach (var pair in deaths)
+        {
+            GUILayout.Label(pair.Key + ": " + pair.Value.ToString("N0"));
+        }
+    }
+#endif
+
 }
