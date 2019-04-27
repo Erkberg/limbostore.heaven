@@ -26,11 +26,18 @@ public class InteractionArea : MonoBehaviour
     public InteractionType interactionType;
     public SequenceType sequenceType;
     public InteractionParticles particles;
+    public SkillType neededSkill = SkillType.None;
+    public CollectableName neededCollectable = CollectableName.None;
 
     private PlayerInteraction playerInteraction;
 
     public void TriggerInteraction()
     {
+        if (!GameManager.Current.skillz.CanDo(neededSkill))
+            return;
+        if (!GameManager.Current.collectables.HasCollectable(neededCollectable))
+            return;
+
         switch (sequenceType)
         {
             case SequenceType.SuddenDeath:
