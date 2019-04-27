@@ -14,12 +14,15 @@ public class GameManager : MonoBehaviour
     private EventManager eventManager = new EventManager();
     private CollectablesManager collectablesManager = new CollectablesManager();
     private SkillManager skillzManager = new SkillManager();
+    [SerializeField]
+    private LevelManager levelManager;
     
     public CurrencyManager currency => currencyManager;
     public EventManager events => eventManager;
     public CollectablesManager collectables => collectablesManager;
     public SkillManager skillz => skillzManager;
-
+    public LevelManager Level => levelManager;
+    
     public static GameManager Current { private set; get; }
 
     public void TriggerDeath(DeathType deathType)
