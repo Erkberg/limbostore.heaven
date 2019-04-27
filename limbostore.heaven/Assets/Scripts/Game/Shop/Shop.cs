@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
@@ -15,12 +16,15 @@ public class Shop : MonoBehaviour
 
     public void OpenShop()
     {
-        selfCanvas.enabled = true;
+        GameManager.Current.SetPlayerLocked(true);
+        selfCanvas.enabled = true;       
+
         foreach (var item in shopItems)
         {
             item.Init();
         }
-        
+
+        EventSystem.current.SetSelectedGameObject(shopItems[0].gameObject);
         shopItems[0].Select();
     }
 
@@ -32,12 +36,21 @@ public class Shop : MonoBehaviour
         }
 
         selfCanvas.enabled = false;
+        EventSystem.current.SetSelectedGameObject(null);
+
+        GameManager.Current.SetPlayerLocked(false);
     }
 
     private void Update()
     {
         if (!selfCanvas.enabled)
             return;
+
+        // Check close shop
+        if (Input.GetButtonDown(InputStrings.SneakButton))
+        {
+            CloseShop();
+        }
 
         GameObject obj = EventSystem.current.currentSelectedGameObject;
         if (obj == null)
