@@ -678,6 +678,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8516242007737684854, guid: 2109336474719ed44b171ab998d37b5a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516242007737684853, guid: 2109336474719ed44b171ab998d37b5a,
+        type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8516242008727372486, guid: 2109336474719ed44b171ab998d37b5a,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -732,6 +742,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516242008947440607, guid: 2109336474719ed44b171ab998d37b5a,
+        type: 3}
+      propertyPath: m_text
+      value: Description of Death
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516242008947440607, guid: 2109336474719ed44b171ab998d37b5a,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516242008947440607, guid: 2109336474719ed44b171ab998d37b5a,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516242008947440607, guid: 2109336474719ed44b171ab998d37b5a,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2109336474719ed44b171ab998d37b5a, type: 3}
