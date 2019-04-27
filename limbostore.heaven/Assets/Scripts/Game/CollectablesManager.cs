@@ -18,6 +18,7 @@ public class CollectablesManager
     {
         if (!collectables.Contains(collectable))
         {
+            Debug.Log("just collected " + collectable);
             collectables.Add(collectable);
             GameManager.Current.events.TriggerEvent(EventManager.EventType.NewCollectable, collectable);
         }
