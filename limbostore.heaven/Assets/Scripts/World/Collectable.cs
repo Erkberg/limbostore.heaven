@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-    public string id;
+    public CollectableName collectableName;
 
     private void Start()
     {
-        if(GameManager.Current.collectables.HasCollectable(id))
+        if(GameManager.Current.collectables.HasCollectable(collectableName))
         {
             Destroy(gameObject);
         }
@@ -16,7 +16,7 @@ public class Collectable : MonoBehaviour
 
     public void Collect()
     {
-        GameManager.Current.collectables.AddCollectable(id);
+        GameManager.Current.collectables.AddCollectable(collectableName);
         Destroy(gameObject);
     }
 }

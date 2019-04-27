@@ -6,6 +6,8 @@ public class InteractionParticles : MonoBehaviour
 {
     [SerializeField]
     private ParticleSystem[] particles;
+    [SerializeField]
+    private ParticleSystem particlesUnavailable;
 
     public void Play()
     {
@@ -15,12 +17,18 @@ public class InteractionParticles : MonoBehaviour
         }
     }
 
-    public void Stop()
+    public void PlayUnavailable()
     {
-        
+        particlesUnavailable.Play();
+    }
+
+    public void Stop()
+    {        
         foreach (ParticleSystem particle in particles)
         {
             particle.Stop();
         }
+
+        particlesUnavailable.Stop();
     }
 }

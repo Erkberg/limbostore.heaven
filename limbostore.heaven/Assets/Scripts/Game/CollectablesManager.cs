@@ -11,7 +11,10 @@ public class CollectablesManager
     
     public bool HasCollectable(CollectableName collectableName)
     {
-        return collectables.Contains(collectableName) || hasAllCollectables;
+        if (collectableName == CollectableName.None)
+            return true;
+        else
+            return collectables.Contains(collectableName) || hasAllCollectables;
     }
 
     public void AddCollectable(CollectableName collectableName)
