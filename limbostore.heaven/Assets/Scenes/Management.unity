@@ -496,8 +496,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 899640b1a5ac7ef4e90331bb04259336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToTrigger: 15
-  deathType: {fileID: 11400000, guid: 408b03399792a6b4c8d65c8470607623, type: 2}
+  timeToTrigger: 42
+  deathType: {fileID: 11400000, guid: ccd7abd8bfb52c641bbc12c319a6dbe0, type: 2}
   timer: 0
 --- !u!114 &1426023696 stripped
 MonoBehaviour:
