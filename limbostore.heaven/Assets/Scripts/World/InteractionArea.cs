@@ -14,6 +14,8 @@ public class InteractionArea : MonoBehaviour
     public enum SequenceType
     {
         SuddenDeath,
+        SuddenDeathSkill,
+        SuddenDeathCollectable,
         Collectable,
         AnimationThenDeath,
         ChangeScene,
@@ -32,6 +34,14 @@ public class InteractionArea : MonoBehaviour
             case SequenceType.SuddenDeath:
                 BaseDeathTrigger baseDeathTrigger = GetComponent<BaseDeathTrigger>();
                 baseDeathTrigger.TriggerDeath();
+                break;
+            case SequenceType.SuddenDeathSkill:
+                BaseDeathTrigger skillDeathTrigger = GetComponent<BaseDeathTrigger>();
+                skillDeathTrigger.TriggerDeath();
+                break;
+            case SequenceType.SuddenDeathCollectable:
+                CollectableDeathTrigger collectableDeathTrigger = GetComponent<CollectableDeathTrigger>();
+                collectableDeathTrigger.TriggerDeath();
                 break;
 
             case SequenceType.Collectable:

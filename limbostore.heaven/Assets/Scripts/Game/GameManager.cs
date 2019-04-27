@@ -9,7 +9,13 @@ public class GameManager : MonoBehaviour
     #endif
 
     public DeathScreen deathScreen;
-    
+
+    public bool PlayerLocked
+    {
+        get;
+        private set;
+    }
+
     private CurrencyManager currencyManager = new CurrencyManager();
     private EventManager eventManager = new EventManager();
     private CollectablesManager collectablesManager = new CollectablesManager();
@@ -27,6 +33,9 @@ public class GameManager : MonoBehaviour
 
     public void TriggerDeath(DeathType deathType)
     {
+        if (!PlayerLocked)
+            return;
+        PlayerLocked = false;
         bool isFirstDeath = currencyManager.GetDeathCount(deathType) == 0;
         
         currencyManager.AddDeath(deathType);
@@ -34,15 +43,23 @@ public class GameManager : MonoBehaviour
         events.TriggerEvent(EventManager.EventType.Death, deathType.name);
     }
 
-    public void Restart()
+    public void Restart(float delayTime)
     {
-        
+        Invoke(nameof(ReturnFromTheDead), delayTime);
+        events.TriggerEvent(EventManager.EventType.NewGame);
     }
-    
+
+    void ReturnFromTheDead()
+    {
+        PlayerLocked = true;
+    }
     
     void Awake()
     {
         Current = this;
+        events.GameIsStarting.AddListener(ReturnFromTheDead);
+        // TODO: somewhere else
+        events.TriggerEvent(EventManager.EventType.GameIsStarting);
     }
 
     private void Update()

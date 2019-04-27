@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1363534968114509842
+--- !u!1 &92659443689218742
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,72 +8,74 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1363534968114509841}
-  - component: {fileID: 1363534968114509854}
-  - component: {fileID: 1363534968114509855}
-  - component: {fileID: 1363534968114509840}
+  - component: {fileID: 9046812429239116995}
+  - component: {fileID: 2515581257003032298}
+  - component: {fileID: 6383487351589616018}
+  - component: {fileID: 3865525405892750896}
   m_Layer: 0
-  m_Name: RoomChangeInteraction
+  m_Name: SkillDeathInteraction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1363534968114509841
+--- !u!4 &9046812429239116995
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363534968114509842}
+  m_GameObject: {fileID: 92659443689218742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.06, y: -5.47, z: 0}
+  m_LocalPosition: {x: 3.56, y: -3.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1363534968114509854
+--- !u!114 &2515581257003032298
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363534968114509842}
+  m_GameObject: {fileID: 92659443689218742}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0911f5f09eab3c747a81a772dc622347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionType: 1
-  sequenceType: 5
---- !u!114 &1363534968114509855
+  interactionType: 0
+  sequenceType: 0
+--- !u!114 &6383487351589616018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363534968114509842}
+  m_GameObject: {fileID: 92659443689218742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 761267c17d618b0449dea3f5ab77c91e, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d40918a6e132744fa4e49fe376df9b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Rooftop
---- !u!61 &1363534968114509840
+  deathType: {fileID: 0}
+  type: 1
+  skill: 0
+--- !u!61 &3865525405892750896
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363534968114509842}
+  m_GameObject: {fileID: 92659443689218742}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.5400705, y: 0.047646523}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -84,5 +86,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.208025, y: 4.0017185}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0

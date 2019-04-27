@@ -468,6 +468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cheatDeathType: {fileID: 11400000, guid: b4c2e1b9dbc15b145852ba5b4264b75c, type: 2}
   deathScreen: {fileID: 1426023696}
+  IsAlive: 0
   levelManager: {fileID: 207858049}
 --- !u!4 &1320698218
 Transform:
@@ -683,11 +684,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8516242007737684853, guid: 2109336474719ed44b171ab998d37b5a,
-        type: 3}
-      propertyPath: m_Alpha
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8516242008727372486, guid: 2109336474719ed44b171ab998d37b5a,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -743,25 +739,35 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8516242008947440607, guid: 2109336474719ed44b171ab998d37b5a,
+    - target: {fileID: 7981458820506295303, guid: 2109336474719ed44b171ab998d37b5a,
         type: 3}
-      propertyPath: m_text
-      value: Description of Death
+      propertyPath: m_AnchorMin.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8516242008947440607, guid: 2109336474719ed44b171ab998d37b5a,
+    - target: {fileID: 7981458820506295303, guid: 2109336474719ed44b171ab998d37b5a,
         type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 21
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8516242008947440607, guid: 2109336474719ed44b171ab998d37b5a,
+    - target: {fileID: 7981458820506295303, guid: 2109336474719ed44b171ab998d37b5a,
         type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 2
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8516242008947440607, guid: 2109336474719ed44b171ab998d37b5a,
+    - target: {fileID: 7981458820506295303, guid: 2109336474719ed44b171ab998d37b5a,
         type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 3
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981458820506295303, guid: 2109336474719ed44b171ab998d37b5a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981458820506295303, guid: 2109336474719ed44b171ab998d37b5a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2109336474719ed44b171ab998d37b5a, type: 3}
