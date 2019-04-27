@@ -8,6 +8,8 @@ namespace Game
         public string title;
         [TextArea(2, 16)]
         public string description;
+
+        public float textDelay = 1.0f;
         public AudioClip deathClip;
         
         public int rewardFirstDeath = 10;

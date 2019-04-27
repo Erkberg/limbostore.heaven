@@ -44,7 +44,8 @@ public class InteractionArea : MonoBehaviour
                 break;
 
             case SequenceType.ChangeScene:
-
+                ChangeLevel changleLevel = GetComponent<ChangeLevel>();
+                changleLevel.LoadLevel();
                 break;
 
             case SequenceType.OpenShop:

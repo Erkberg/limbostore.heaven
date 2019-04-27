@@ -33,6 +33,11 @@ public class GameManager : MonoBehaviour
         deathScreen.DisplayDeathType(deathType, isFirstDeath);
         events.TriggerEvent(EventManager.EventType.Death, deathType.name);
     }
+
+    public void Restart()
+    {
+        
+    }
     
     
     void Awake()

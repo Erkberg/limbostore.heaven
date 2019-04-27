@@ -17,6 +17,33 @@ public class PlayerMovement : MonoBehaviour
     public bool isRunning = false;
     public bool isSneaking = false;
 
+    private Vector3 startingPosition;
+    private Quaternion startingRotation;
+
+    private void Awake()
+    {
+        startingPosition = transform.position;
+        startingRotation = transform.rotation;
+        GameManager.Current.events.Death.AddListener(PlayerDeath);
+        GameManager.Current.events.NewGame.AddListener(Reset);
+    }
+
+    void PlayerDeath()
+    {
+        
+    }
+
+    public void Reset()
+    {
+        transform.position = startingPosition;
+        transform.rotation = startingRotation;
+        isRunning = false;
+        isMoving = false;
+        isSneaking = false;
+        rb.velocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+    }
+
     private void Update()
     {
         if(movementEnabled)
