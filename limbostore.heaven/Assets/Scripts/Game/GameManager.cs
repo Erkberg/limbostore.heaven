@@ -31,11 +31,12 @@ public class GameManager : MonoBehaviour
     
     public static GameManager Current { private set; get; }
 
+    
     public void TriggerDeath(DeathType deathType)
     {
-        if (!PlayerLocked)
+        if (PlayerLocked)
             return;
-        PlayerLocked = false;
+        PlayerLocked = true;
         bool isFirstDeath = currencyManager.GetDeathCount(deathType) == 0;
         
         currencyManager.AddDeath(deathType);
@@ -51,7 +52,7 @@ public class GameManager : MonoBehaviour
 
     void ReturnFromTheDead()
     {
-        PlayerLocked = true;
+        PlayerLocked = false;
     }
     
     void Awake()

@@ -239,7 +239,7 @@ PrefabInstance:
     - target: {fileID: 92659443689218742, guid: e20e24cc4f84c264587478861e481830,
         type: 3}
       propertyPath: m_Name
-      value: SuddenDeathInteraction
+      value: SuddenDeathInteraction Umbrella
       objectReference: {fileID: 0}
     - target: {fileID: 9046812429239116995, guid: e20e24cc4f84c264587478861e481830,
         type: 3}
@@ -295,6 +295,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515581257003032298, guid: e20e24cc4f84c264587478861e481830,
+        type: 3}
+      propertyPath: interactionType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2522280777366457695, guid: e20e24cc4f84c264587478861e481830,
         type: 3}
@@ -945,8 +950,8 @@ Transform:
   m_Children:
   - {fileID: 569964658}
   - {fileID: 475263101}
-  - {fileID: 1087996947}
   - {fileID: 1814274016}
+  - {fileID: 1087996947}
   m_Father: {fileID: 215057431}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1057,7 +1062,7 @@ PrefabInstance:
     - target: {fileID: 9046812429239116995, guid: e20e24cc4f84c264587478861e481830,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9046812429239116995, guid: e20e24cc4f84c264587478861e481830,
         type: 3}
@@ -1099,6 +1104,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 12.104321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703719955155738337, guid: e20e24cc4f84c264587478861e481830,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703719955155738337, guid: e20e24cc4f84c264587478861e481830,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e20e24cc4f84c264587478861e481830, type: 3}
@@ -1392,6 +1407,16 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 3.296856
       objectReference: {fileID: 0}
+    - target: {fileID: 2462474468955992598, guid: a02f93032ad5b4248842dca789b3c07f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462474468955992598, guid: a02f93032ad5b4248842dca789b3c07f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a02f93032ad5b4248842dca789b3c07f, type: 3}
 --- !u!4 &1347184586 stripped
@@ -1554,7 +1579,7 @@ PrefabInstance:
     - target: {fileID: 92659443689218742, guid: e20e24cc4f84c264587478861e481830,
         type: 3}
       propertyPath: m_Name
-      value: SuddenDeathInteraction (2)
+      value: SuddenDeathInteraction (2) Umbrella
       objectReference: {fileID: 0}
     - target: {fileID: 9046812429239116995, guid: e20e24cc4f84c264587478861e481830,
         type: 3}
@@ -1594,7 +1619,7 @@ PrefabInstance:
     - target: {fileID: 9046812429239116995, guid: e20e24cc4f84c264587478861e481830,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9046812429239116995, guid: e20e24cc4f84c264587478861e481830,
         type: 3}
@@ -1610,6 +1635,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515581257003032298, guid: e20e24cc4f84c264587478861e481830,
+        type: 3}
+      propertyPath: interactionType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2522280777366457695, guid: e20e24cc4f84c264587478861e481830,
         type: 3}

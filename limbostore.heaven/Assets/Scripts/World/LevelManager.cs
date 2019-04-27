@@ -14,10 +14,17 @@ public class LevelManager : MonoBehaviour
     {
         "Main", "Management"
     };
+
     
     void Start()
     {
+        GameManager.Current.events.NewGame.AddListener(LoadStartLevel);
         CheckForMainLevels();
+        ChangeLevelTo(sceneToStart);
+    }
+
+    void LoadStartLevel()
+    {
         ChangeLevelTo(sceneToStart);
     }
     
