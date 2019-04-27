@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public bool movementEnabled = true;
     [Header("Refs")]
     public Rigidbody2D rb;
     public PlayerAnimation playerAnimation;
@@ -46,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if(movementEnabled)
+        if(!GameManager.Current.PlayerLocked)
         {
             Move();
 
