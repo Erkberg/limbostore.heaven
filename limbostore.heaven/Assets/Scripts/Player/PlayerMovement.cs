@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public bool movementEnabled = true;
+    [Header("Refs")]
     public Rigidbody2D rb;
-    public Transform sprite;
-
+    public PlayerAnimation playerAnimation;
+    [Header("Speeds")]
     public float moveSpeed = 1f;
-    public bool movementEnabled = true;    
+    public float runMultiplier = 2f;
+    public float sneakMultiplier = 0.5f;
+    [Header("State")]
+    public bool isMoving = false;
+    public bool isRunning = false;
+    public bool isSneaking = false;
 
     private void Update()
     {
@@ -18,7 +25,14 @@ public class PlayerMovement : MonoBehaviour
 
             if(rb.velocity != Vector2.zero)
             {
+                playerAnimation.SetMoving(true);
+                isMoving = true;
                 Rotate(rb.velocity);
+            }
+            else
+            {
+                playerAnimation.SetMoving(false);
+                isMoving = false;
             }
         }
     }
@@ -28,12 +42,70 @@ public class PlayerMovement : MonoBehaviour
         float horizontal = Input.GetAxis(InputStrings.HorizontalAxis);
         float vertical = Input.GetAxis(InputStrings.VerticalAxis);
         Vector2 movementAmount = new Vector2(horizontal, vertical);
+
+        CheckRunning(ref movementAmount);
+        CheckSneaking(ref movementAmount);
+
         rb.velocity = movementAmount * moveSpeed;
     }
 
     private void Rotate(Vector3 movement)
     {
         float angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
-        sprite.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        playerAnimation.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+    }
+
+    private void CheckRunning(ref Vector2 movementAmount)
+    {
+        if(GameManager.Current.skillz.CanDo(SkillType.Run))
+        {
+            if(Input.GetButton(InputStrings.RunButton))
+            {
+                SetRunning(true);
+                isRunning = true;
+                movementAmount *= runMultiplier;
+            }
+            else
+            {
+                SetRunning(false);
+            }
+        }
+        else
+        {
+            SetRunning(false);
+        }
+    }
+
+    private void SetRunning(bool running)
+    {
+        playerAnimation.SetRunning(running);
+        isRunning = running;
+    }
+
+    private void CheckSneaking(ref Vector2 movementAmount)
+    {
+        if (GameManager.Current.skillz.CanDo(SkillType.Sneak))
+        {
+            if (Input.GetButton(InputStrings.SneakButton))
+            {
+                SetSneaking(true);
+                isSneaking = true;
+                movementAmount *= sneakMultiplier;
+            }
+            else
+            {
+                SetSneaking(false);
+            }
+        }
+        else
+        {
+            SetSneaking(false);
+        }
+    }
+
+    private void SetSneaking(bool sneaking)
+    {
+        playerAnimation.SetSneaking(sneaking);
+        isSneaking = sneaking;
     }
 }
