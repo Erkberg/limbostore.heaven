@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
     private void Rotate(Vector3 movement)
     {
         float angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
-        playerAnimation.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        playerAnimation.transform.localRotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
     private void CheckRunning(ref Vector2 movementAmount)
