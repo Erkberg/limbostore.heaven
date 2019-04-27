@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Splatter
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: acc1ba49506faf646be69f2c40153b37, type: 3}
+    - {fileID: 2800000, guid: e18854cb2f36dc442a068bfd2ab1fb29, type: 3}
+    - {fileID: 2800000, guid: 8175371c143e7a04bb40c725005f3d6d, type: 3}
+    - {fileID: 2800000, guid: 0567c975a2bccd34fba736c6fd53702b, type: 3}
+    - {fileID: 2800000, guid: 39841df3f7e67864185da7f2f4380c85, type: 3}
+    - {fileID: 2800000, guid: 703d2719eb0eccf409301a692a9f2c31, type: 3}
+    - {fileID: 2800000, guid: fad77286b518fbd4f81314f50df14f66, type: 3}
+    - {fileID: 2800000, guid: 298eb058bf344d44ba958b75eab69fe1, type: 3}
+    - {fileID: 2800000, guid: a54be97c436ac424d91b78ed23a40379, type: 3}
+    - {fileID: 2800000, guid: 9876f2ef808fd7b409e92193c0af514b, type: 3}
+    - {fileID: 2800000, guid: 7e09f52952e0f6e418c1647b30dfaef3, type: 3}
+    - {fileID: 2800000, guid: 1d701127fcc0ae8478a7042e56a16960, type: 3}
+    totalSpriteSurfaceArea: 152576
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 39841df3f7e67864185da7f2f4380c85, type: 3}
+  - {fileID: 21300000, guid: 0567c975a2bccd34fba736c6fd53702b, type: 3}
+  - {fileID: 21300000, guid: fad77286b518fbd4f81314f50df14f66, type: 3}
+  - {fileID: 21300000, guid: 1d701127fcc0ae8478a7042e56a16960, type: 3}
+  - {fileID: 21300000, guid: 298eb058bf344d44ba958b75eab69fe1, type: 3}
+  - {fileID: 21300000, guid: 703d2719eb0eccf409301a692a9f2c31, type: 3}
+  - {fileID: 21300000, guid: 7e09f52952e0f6e418c1647b30dfaef3, type: 3}
+  - {fileID: 21300000, guid: acc1ba49506faf646be69f2c40153b37, type: 3}
+  - {fileID: 21300000, guid: e18854cb2f36dc442a068bfd2ab1fb29, type: 3}
+  - {fileID: 21300000, guid: 8175371c143e7a04bb40c725005f3d6d, type: 3}
+  - {fileID: 21300000, guid: a54be97c436ac424d91b78ed23a40379, type: 3}
+  - {fileID: 21300000, guid: 9876f2ef808fd7b409e92193c0af514b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - orange-watercolor-splatter-5
+  - orange-watercolor-splatter-4
+  - orange-watercolor-splatter-7
+  - orange-watercolor-splatter-12
+  - orange-watercolor-splatter-8
+  - orange-watercolor-splatter-6
+  - orange-watercolor-splatter-11
+  - orange-watercolor-splatter-1
+  - orange-watercolor-splatter-2
+  - orange-watercolor-splatter-3
+  - orange-watercolor-splatter-9
+  - orange-watercolor-splatter-10
+  m_Tag: Splatter
+  m_IsVariant: 0
