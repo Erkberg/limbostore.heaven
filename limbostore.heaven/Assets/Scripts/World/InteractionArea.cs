@@ -26,16 +26,12 @@ public class InteractionArea : MonoBehaviour
     public InteractionType interactionType;
     public SequenceType sequenceType;
     public InteractionParticles particles;
-    public SkillType neededSkill = SkillType.None;
-    public CollectableName neededCollectable = CollectableName.None;
 
     private PlayerInteraction playerInteraction;
 
     public void TriggerInteraction()
     {
-        if (!CanTriggerInteraction())
-            return;
-
+        particles.Stop();
         switch (sequenceType)
         {
             case SequenceType.SuddenDeath:
@@ -43,7 +39,7 @@ public class InteractionArea : MonoBehaviour
                 baseDeathTrigger.TriggerDeath();
                 break;
             case SequenceType.SuddenDeathSkill:
-                BaseDeathTrigger skillDeathTrigger = GetComponent<BaseDeathTrigger>();
+                SkillDeathTrigger skillDeathTrigger = GetComponent<SkillDeathTrigger>();
                 skillDeathTrigger.TriggerDeath();
                 break;
             case SequenceType.SuddenDeathCollectable:
@@ -74,20 +70,11 @@ public class InteractionArea : MonoBehaviour
         }
     }
 
-    public bool CanTriggerInteraction()
-    {
-        return GameManager.Current.skillz.CanDo(neededSkill) && GameManager.Current.collectables.HasCollectable(neededCollectable);
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag(Tags.PlayerTag))
         {
-            if (CanTriggerInteraction())
-                particles.Play();
-            else
-                particles.PlayUnavailable();
-
+            particles.Play();
             CheckPlayerInteractionRef(collision);
 
             if(interactionType == InteractionType.OnEnter)
