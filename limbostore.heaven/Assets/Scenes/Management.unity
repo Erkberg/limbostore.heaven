@@ -418,6 +418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d005362416805e4bbf9fe5fc3d1d3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cheatDeathType: {fileID: 11400000, guid: b4c2e1b9dbc15b145852ba5b4264b75c, type: 2}
 --- !u!4 &1320698218
 Transform:
   m_ObjectHideFlags: 0

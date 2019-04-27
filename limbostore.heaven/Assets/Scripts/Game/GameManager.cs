@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    #if UNITY_EDITOR
+    public DeathType cheatDeathType;
+    #endif
+    
     private CurrencyManager currencyManager = new CurrencyManager();
     private EventManager eventManager = new EventManager();
     private CollectablesManager collectablesManager = new CollectablesManager();
@@ -31,7 +35,7 @@ public class GameManager : MonoBehaviour
             {
                 skillz.AddSkill((SkillType) i);
             }
-            currency.AddDeath("cheat", 99999);
+            currency.AddDeath(cheatDeathType);
             collectables.hasAllCollectables = true;
         }
         #endif
@@ -67,7 +71,7 @@ public class GameManagerEditor : Editor
         }
         if (GUILayout.Button("Get Money"))
         {
-            manager.currency.AddDeath("death", 100);
+            manager.currency.AddDeath(manager.cheatDeathType);
         }
     }
 }

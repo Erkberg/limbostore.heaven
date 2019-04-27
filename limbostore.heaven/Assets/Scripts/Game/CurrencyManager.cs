@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Game;
 using UnityEngine;
 
 public class CurrencyManager
@@ -36,17 +37,21 @@ public class CurrencyManager
         return true;
     }
 
-    public int GetDeathCount(string key)
+    public int GetDeathCount(DeathType type)
     {
-        return !deaths.ContainsKey(key) ? 0 : deaths[key];
+        return !deaths.ContainsKey(type.name) ? 0 : deaths[type.name];
     }
 
-    public void AddDeath(string key, int currency)
+    public void AddDeath(DeathType type)
     {
-        availableCurrency += currency;
-        if (!deaths.ContainsKey(key))
+        if (!deaths.ContainsKey(type.name))
         {
-            deaths.Add(key, 1);
+            deaths.Add(type.name, 1);
+            availableCurrency += type.rewardFirstDeath;
+        }
+        else
+        {
+            availableCurrency += type.rewardDefault;
         }
     }
 
