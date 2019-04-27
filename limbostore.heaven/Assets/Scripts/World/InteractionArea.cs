@@ -33,9 +33,7 @@ public class InteractionArea : MonoBehaviour
 
     public void TriggerInteraction()
     {
-        if (!GameManager.Current.skillz.CanDo(neededSkill))
-            return;
-        if (!GameManager.Current.collectables.HasCollectable(neededCollectable))
+        if (!CanTriggerInteraction())
             return;
 
         switch (sequenceType)
@@ -76,11 +74,20 @@ public class InteractionArea : MonoBehaviour
         }
     }
 
+    public bool CanTriggerInteraction()
+    {
+        return GameManager.Current.skillz.CanDo(neededSkill) && GameManager.Current.collectables.HasCollectable(neededCollectable);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag(Tags.PlayerTag))
         {
-            particles.Play();
+            if (CanTriggerInteraction())
+                particles.Play();
+            else
+                particles.PlayUnavailable();
+
             CheckPlayerInteractionRef(collision);
 
             if(interactionType == InteractionType.OnEnter)

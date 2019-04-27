@@ -12,18 +12,16 @@ public class CollectableDeathTrigger : MonoBehaviour
     }
 
     public CollectableDeathType type = CollectableDeathType.DieIfNotExists;
-    public string collectable = "";
+
     public void TriggerDeath()
     {
         switch (type)
         {
             case CollectableDeathType.DieIfExists:
-                if(GameManager.Current.collectables.HasCollectable(collectable))
-                    GameManager.Current.TriggerDeath(deathType);
+                GameManager.Current.TriggerDeath(deathType);
                 break;
             case CollectableDeathType.DieIfNotExists:
-                if(!GameManager.Current.collectables.HasCollectable(collectable))
-                    GameManager.Current.TriggerDeath(deathType);
+                GameManager.Current.TriggerDeath(deathType);
                 break;
         }
     }
