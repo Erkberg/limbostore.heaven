@@ -28,6 +28,7 @@ public class ShopItem : MonoBehaviour
         else
         {
             CostTextElement.SetText(skillCost.ToString("N0") + " deaths");
+            soldImage.enabled = false;
             if (GameManager.Current.currency.CanAfford(skillCost))
             {
                 animator.SetBool("locked", false);
@@ -63,7 +64,7 @@ public class ShopItem : MonoBehaviour
 
     public void PurchaseSucceeded()
     {
-        soldImage.enabled = true;
+        Init();
     }
     
     public void PurchaseFailed()

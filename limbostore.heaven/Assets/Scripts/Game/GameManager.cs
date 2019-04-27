@@ -56,6 +56,15 @@ public class GameManagerEditor : Editor
         {
             GUILayout.Label((SkillType) i + " => " + manager.skillz.CanDo((SkillType) i));
         }
+
+        if (GUILayout.Button("Open Shop"))
+        {
+            GameObject.FindObjectOfType<Shop>().OpenShop();
+        }
+        if (GUILayout.Button("Get Money"))
+        {
+            manager.currency.Receive(100);
+        }
     }
 }
 #endif
