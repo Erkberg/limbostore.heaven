@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     
     public static GameManager Current { private set; get; }
 
+    
     public void TriggerDeath(DeathType deathType)
     {
         if (PlayerLocked)
