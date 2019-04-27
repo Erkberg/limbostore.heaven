@@ -4,7 +4,7 @@ public class EventManager
 {
     public enum EventType
     {
-        None, NewGame, GameIsStarting, Death, NewSkill, PauseGame, ResumeGame
+        None, NewGame, GameIsStarting, Death, NewSkill, PauseGame, ResumeGame, NewCollectable
     }
 
     public EventType lastEvent = EventType.None;
@@ -14,9 +14,15 @@ public class EventManager
     public UnityEvent PauseGame = new UnityEvent();
     public UnityEvent ResumeGame = new UnityEvent();
     public UnityEvent Death = new UnityEvent();
-    public UnityEvent NewSkill = new UnityEvent();
+    public UnityEvent<string> NewSkill;
+    public UnityEvent<string> NewCollectable;
+
+    public EventManager()
+    {
+        
+    }
     
-    public void TriggerEvent(EventType eventType)
+    public void TriggerEvent(EventType eventType, string value = "")
     {
         switch (eventType)
         {
@@ -29,7 +35,7 @@ public class EventManager
                 Death.Invoke();
                 break;
             case EventType.NewSkill:
-                NewSkill.Invoke();
+                NewSkill.Invoke(value);
                 break;
             case EventType.GameIsStarting:
                 GameIsStarting.Invoke();
@@ -39,6 +45,9 @@ public class EventManager
                 break;
             case EventType.ResumeGame:
                 ResumeGame.Invoke();
+                break;
+            case EventType.NewCollectable:
+                NewCollectable.Invoke(value);
                 break;
         }
     }

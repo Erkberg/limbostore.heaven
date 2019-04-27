@@ -12,6 +12,10 @@ public class CollectablesManager
 
     public void Receive(string collectable)
     {
-        collectables.Add(collectable);
+        if (!collectables.Contains(collectable))
+        {
+            collectables.Add(collectable);
+            GameManager.Current.events.TriggerEvent(EventManager.EventType.NewCollectable, collectable);
+        }
     }
 }
