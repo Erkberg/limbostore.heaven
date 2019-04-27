@@ -34,3 +34,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+/limbostore.heaven/Assets/TextMesh Pro.meta
+/limbostore.heaven/Assets/TextMesh Pro
