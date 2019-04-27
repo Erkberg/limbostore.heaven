@@ -53,6 +53,11 @@ public class GameManager : MonoBehaviour
     {
         PlayerLocked = false;
     }
+
+    public void SetPlayerLocked(bool locked)
+    {
+        PlayerLocked = locked;
+    }
     
     void Awake()
     {

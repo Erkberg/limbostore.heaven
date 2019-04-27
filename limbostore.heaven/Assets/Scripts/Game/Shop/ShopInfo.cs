@@ -11,6 +11,6 @@ public class ShopInfo : MonoBehaviour
 
     public void Hide()
     {
-        selfGroup.alpha = 1f;
+        selfGroup.alpha = 0f;
     }
 }

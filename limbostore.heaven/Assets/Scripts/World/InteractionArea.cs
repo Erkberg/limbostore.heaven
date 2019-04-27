@@ -30,7 +30,6 @@ public class InteractionArea : MonoBehaviour
 
     public void TriggerInteraction()
     {
-        particles.Stop();
         switch (sequenceType)
         {
             case SequenceType.SuddenDeath:
