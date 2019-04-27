@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
-  m_Name: Schranktod
+  m_Name: 2.2 - Feuer
   m_EditorClassIdentifier: 
-  title: Death By Knowledge
-  description: Every book about anything ever happening fell on you.
+  title: "Zu Tode Gesch\xE4mt"
+  description: 
+  textDelay: 1
   deathClip: {fileID: 0}
-  rewardFirstDeath: 55
-  rewardDefault: 2
+  rewardFirstDeath: 70
+  rewardDefault: 4

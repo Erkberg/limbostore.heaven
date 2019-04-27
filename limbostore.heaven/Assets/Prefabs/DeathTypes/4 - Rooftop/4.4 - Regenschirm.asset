@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
-  m_Name: CheatDeath
+  m_Name: 4.4 - Regenschirm
   m_EditorClassIdentifier: 
-  title: Death By Cheat
-  description: You cheated your way through the game. Congrats.
+  title: Crushed by umbrella
+  description: You wanted to hide from the sun, but suddenly you pulled on something
+    and from every side it cam down on you.
+  textDelay: 1
   deathClip: {fileID: 0}
-  rewardFirstDeath: 999999
-  rewardDefault: 999999
+  rewardFirstDeath: 400
+  rewardDefault: 3

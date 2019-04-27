@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
-  m_Name: ZuTodeGefressen
+  m_Name: 0.3 - Gegen Wand Rennen
   m_EditorClassIdentifier: 
-  title: Death by food
-  description: You really thought you could eat five of those?
+  title: Ran against the wall
+  description: This definetly hurt.
   textDelay: 1
   deathClip: {fileID: 0}
-  rewardFirstDeath: 15
-  rewardDefault: 1
+  rewardFirstDeath: 20
+  rewardDefault: 2
