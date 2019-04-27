@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64923e6d7441f6409e384f0a3d21146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToStart: Wohnzimmer
+  sceneToStart: Room
   currentLevel: 
   mainScenes:
   - Main
