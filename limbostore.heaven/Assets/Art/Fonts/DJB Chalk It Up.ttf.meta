@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2479e060406107042812a38e8796b97e
+guid: 143a7489c3cc51947b3385b1db4729cd
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Chalk Stick
+  fontName: DJB Chalk It Up
   fontNames:
-  - Chalk Stick
+  - DJB Chalk It Up
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
