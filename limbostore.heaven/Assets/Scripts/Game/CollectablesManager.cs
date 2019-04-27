@@ -10,7 +10,7 @@ public class CollectablesManager
         return collectables.Contains(collectable);
     }
 
-    public void Receive(string collectable)
+    public void AddCollectable(string collectable)
     {
         if (!collectables.Contains(collectable))
         {
