@@ -24,11 +24,13 @@ public class InteractionArea : MonoBehaviour
 
     public InteractionType interactionType;
     public SequenceType sequenceType;
+    public InteractionParticles particles;
 
     private PlayerInteraction playerInteraction;
 
     public void TriggerInteraction()
     {
+        particles.Stop();
         switch (sequenceType)
         {
             case SequenceType.SuddenDeath:
@@ -68,6 +70,7 @@ public class InteractionArea : MonoBehaviour
     {
         if(collision.CompareTag(Tags.PlayerTag))
         {
+            particles.Play();
             CheckPlayerInteractionRef(collision);
 
             if(interactionType == InteractionType.OnEnter)
@@ -85,6 +88,7 @@ public class InteractionArea : MonoBehaviour
     {
         if(collision.CompareTag(Tags.PlayerTag))
         {
+            particles.Stop();
             CheckPlayerInteractionRef(collision);
             playerInteraction.OnExitInteractionArea(this);
         }

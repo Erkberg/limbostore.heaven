@@ -1885,7 +1885,7 @@ PrefabInstance:
     - target: {fileID: 7179426795194874990, guid: 9fd5432117a5fd74e83578ff9d58fc11,
         type: 3}
       propertyPath: m_text
-      value: Open
+      value: Doorkey
       objectReference: {fileID: 0}
     - target: {fileID: 7179426795194874990, guid: 9fd5432117a5fd74e83578ff9d58fc11,
         type: 3}
