@@ -19,7 +19,8 @@ public class InteractionArea : MonoBehaviour
         Collectable,
         AnimationThenDeath,
         ChangeScene,
-        OpenShop
+        OpenShop,
+        CustomDeath
     }
 
     public InteractionType interactionType;
@@ -30,7 +31,6 @@ public class InteractionArea : MonoBehaviour
 
     public void TriggerInteraction()
     {
-        particles.Stop();
         switch (sequenceType)
         {
             case SequenceType.SuddenDeath:
@@ -62,6 +62,9 @@ public class InteractionArea : MonoBehaviour
 
             case SequenceType.OpenShop:
                 Shop.Current.OpenShop();
+                break;
+            case SequenceType.CustomDeath:
+                GetComponent<ICustomDeath>().Trigger();
                 break;
         }
     }
