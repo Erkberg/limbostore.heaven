@@ -36,6 +36,9 @@
               <e p="Tags.cs" t="Include" />
             </e>
             <e p="CurrencyManager.cs" t="Include" />
+            <e p="Deaths" t="Include">
+              <e p="BaseDeathTrigger.cs" t="Include" />
+            </e>
             <e p="DeathType.cs" t="Include" />
             <e p="EventManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
@@ -46,13 +49,20 @@
               <e p="SkillType.cs" t="Include" />
             </e>
             <e p="SkillManager.cs" t="Include" />
+            <e p="UI" t="Include">
+              <e p="DeathScreen.cs" t="Include" />
+            </e>
           </e>
           <e p="Player" t="Include">
             <e p="PlayerAnimation.cs" t="Include" />
+            <e p="PlayerInteraction.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
           </e>
           <e p="World" t="Include">
-            <e p="dummy.txt" t="Include" />
+            <e p="Collectable.cs" t="Include" />
+            <e p="InteractionArea.cs" t="Include" />
+            <e p="InteractionParticles.cs" t="Include" />
+            <e p="LevelManager.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
