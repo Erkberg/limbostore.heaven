@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3639012660577835053}
+  - component: {fileID: 5409646953691720491}
+  - component: {fileID: 3455572599059346677}
   - component: {fileID: 3639012660577835054}
   m_Layer: 0
   m_Name: Sprite
@@ -32,6 +34,38 @@ Transform:
   m_Father: {fileID: 3639012661080299698}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5409646953691720491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3639012660577835052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb84bd7ea3dad6c41869cf4cee44bc40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3455572599059346677}
+--- !u!95 &3455572599059346677
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3639012660577835052}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13a64fa465059de4792ddd15e38f0ba8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &3639012660577835054
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -126,10 +160,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f053da3b53b3690449ce27360ebc15fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 3639012661080299703}
-  sprite: {fileID: 3639012660577835053}
-  moveSpeed: 4
   movementEnabled: 1
+  rb: {fileID: 3639012661080299703}
+  playerAnimation: {fileID: 5409646953691720491}
+  moveSpeed: 2
+  runMultiplier: 2
+  sneakMultiplier: 0.5
+  isMoving: 0
+  isRunning: 0
+  isSneaking: 0
 --- !u!58 &3639012661080299696
 CircleCollider2D:
   m_ObjectHideFlags: 0
