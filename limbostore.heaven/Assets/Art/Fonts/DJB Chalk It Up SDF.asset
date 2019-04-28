@@ -113,9 +113,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: DJB Chalk It Up SDF
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -799553368
   material: {fileID: -2787421079887725803}
-  materialHashCode: 0
+  materialHashCode: -1855874781
   m_Version: 1.1.0
   m_SourceFontFileGUID: 143a7489c3cc51947b3385b1db4729cd
   m_SourceFontFile_EditorRef: {fileID: 0}
