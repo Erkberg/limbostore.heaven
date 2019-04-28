@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Crushed by umbrella
   description: You wanted to hide from the sun, but suddenly you pulled on something
-    and from every side it cam down on you.
+    and it came down on you from every side.
   textDelay: 1
   deathClip: {fileID: 8300000, guid: e506f7ac3f0df4f4298a96c23ac325af, type: 3}
   rewardFirstDeath: 400

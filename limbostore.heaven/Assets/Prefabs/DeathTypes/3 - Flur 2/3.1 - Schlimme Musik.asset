@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
   m_Name: 3.1 - Schlimme Musik
   m_EditorClassIdentifier: 
-  title: Noisy Neighbors
+  title: Noisy neighbors
   description: 'Your neighbor always said: "Someday, my kid will be the best at playing
-    the violine." You have a different opinion.'
+    the violin." You have a different opinion.'
   textDelay: 1
   deathClip: {fileID: 8300000, guid: 2de02fedbe8498348985e0382d8b3c46, type: 3}
   rewardFirstDeath: 290

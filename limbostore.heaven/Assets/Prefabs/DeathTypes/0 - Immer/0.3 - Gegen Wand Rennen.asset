@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 0.3 - Gegen Wand Rennen
   m_EditorClassIdentifier: 
   title: Ran against the wall
-  description: This definetly hurt.
+  description: This definitely hurt.
   textDelay: 1
   deathClip: {fileID: 8300000, guid: a4ec8a402b57625468fa83a2d815d0eb, type: 3}
   rewardFirstDeath: 20

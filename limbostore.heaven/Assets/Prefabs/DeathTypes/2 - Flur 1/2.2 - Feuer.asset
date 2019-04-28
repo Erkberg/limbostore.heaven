@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
   m_Name: 2.2 - Feuer
   m_EditorClassIdentifier: 
-  title: Death By Fire
-  description: Those flickering lights were so faszinating yet so hot.
+  title: Death by fire
+  description: Those flickering lights were so fascinating yet so hot.
   textDelay: 1.6
   deathClip: {fileID: 8300000, guid: 198b641ae4565fc429094fb69d2a6538, type: 3}
   rewardFirstDeath: 90

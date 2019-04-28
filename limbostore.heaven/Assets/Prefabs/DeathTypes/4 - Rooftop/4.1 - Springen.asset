@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
   m_Name: 4.1 - Springen
   m_EditorClassIdentifier: 
-  title: Fell from the Roof
-  description: You just checking the mail on your phone. You walked to the pool, but
-    got a bit sideways. You went where nobody has every built a roof.
+  title: Fell from the roof
+  description: You were just checking the mail on your phone. You walked to the pool,
+    but got a bit sideways. You went where nobody has every built a roof.
   textDelay: 2.5
   deathClip: {fileID: 8300000, guid: 44db13ae00708cc458ae8190d01be7d8, type: 3}
   rewardFirstDeath: 450

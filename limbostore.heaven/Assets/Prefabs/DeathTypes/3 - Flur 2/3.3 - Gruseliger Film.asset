@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
   m_Name: 3.3 - Gruseliger Film
   m_EditorClassIdentifier: 
-  title: Scary Movie
+  title: Scary movie
   description: He turned. He couldn't look. He grasped for air. It was dead silent.
     Suddenly it jumped towards him. Everything after that is a story for your nightmares.
   textDelay: 1.2

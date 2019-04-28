@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
   m_Name: 1.2 - Schnulziger Film
   m_EditorClassIdentifier: 
-  title: Cheesy Movie
+  title: Cheesy movie
   description: The movie about a cheesy musical was so moving. You cried yourself
     to death.
   textDelay: 0.8

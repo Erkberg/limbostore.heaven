@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
   m_Name: 4.3 - Sonnenbrand
   m_EditorClassIdentifier: 
-  title: Death by Sunburn
+  title: Death by sunburn
   description: You just wanted to get a bit of a tan.
   textDelay: 1
   deathClip: {fileID: 8300000, guid: 2db72cc49ac9d2946bc50f3e1e5b7705, type: 3}

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
   m_Name: 1.1 - Stromschlag
   m_EditorClassIdentifier: 
-  title: Electric Shock
-  description: I buzzed, but you went for it. This definetly was worse than that car
-    battery.
+  title: Electric shock
+  description: I buzzed, but you went for it. This was definitely worse than that
+    car battery.
   textDelay: 1
   deathClip: {fileID: 8300000, guid: 801a4c406ce15f244b6fe6a2fc58191d, type: 3}
   rewardFirstDeath: 24

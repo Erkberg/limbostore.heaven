@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
   m_Name: 3.4 - ZuTodeSchaehmen
   m_EditorClassIdentifier: 
-  title: Shamed to Death
+  title: Died of embarassment
   description: You saw it in the movies. You thought that this would never hapen to
-    you. The you slipped.
+    you. Then you slipped.
   textDelay: 1
   deathClip: {fileID: 8300000, guid: a4ec8a402b57625468fa83a2d815d0eb, type: 3}
   rewardFirstDeath: 250
