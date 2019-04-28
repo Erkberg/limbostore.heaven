@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Gruseliger Film
   description: 
-  textDelay: 1
-  deathClip: {fileID: 0}
+  textDelay: 1.2
+  deathClip: {fileID: 8300000, guid: c33ee50c8acec9d4e96ce2cff0fd4011, type: 3}
   rewardFirstDeath: 350
   rewardDefault: 5
