@@ -16,6 +16,6 @@ MonoBehaviour:
   description: Those polititians always make you mad. So mad that your whole head
     exploded.
   textDelay: 1
-  deathClip: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: d92a422dae4bb1a4ea08110339344c7f, type: 3}
   rewardFirstDeath: 280
   rewardDefault: 4

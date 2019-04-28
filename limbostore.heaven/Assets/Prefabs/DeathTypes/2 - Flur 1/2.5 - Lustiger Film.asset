@@ -16,6 +16,6 @@ MonoBehaviour:
   description: 'Tears cam out your eyes. You fell from your sofa, because you were
     laughing so hard. '
   textDelay: 1
-  deathClip: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: 005131f0388e8e149bdf08fa7bd4a664, type: 3}
   rewardFirstDeath: 90
   rewardDefault: 5

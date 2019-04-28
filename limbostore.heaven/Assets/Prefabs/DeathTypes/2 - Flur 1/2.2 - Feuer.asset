@@ -15,6 +15,6 @@ MonoBehaviour:
   title: Death By Fire
   description: Those flickering lights were so faszinating yet so hot.
   textDelay: 1
-  deathClip: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: 198b641ae4565fc429094fb69d2a6538, type: 3}
   rewardFirstDeath: 90
   rewardDefault: 4
