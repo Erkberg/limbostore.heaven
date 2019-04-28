@@ -1067,11 +1067,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2515581257003032298, guid: e20e24cc4f84c264587478861e481830,
-        type: 3}
-      propertyPath: interactionType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2522280777366457695, guid: e20e24cc4f84c264587478861e481830,
         type: 3}
       propertyPath: deathType
@@ -1107,6 +1102,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515581257003032298, guid: e20e24cc4f84c264587478861e481830,
+        type: 3}
+      propertyPath: interactionType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e20e24cc4f84c264587478861e481830, type: 3}
@@ -1157,6 +1157,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MovieDeathInteraction
+      objectReference: {fileID: 0}
+    - target: {fileID: 92659443689218742, guid: ee3a83de9bc451144908f1a741ed3a55,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9046812429239116995, guid: ee3a83de9bc451144908f1a741ed3a55,
         type: 3}
@@ -1212,6 +1217,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -67.346
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165611565152064943, guid: ee3a83de9bc451144908f1a741ed3a55,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791320667893765584, guid: ee3a83de9bc451144908f1a741ed3a55,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106244968402341756, guid: ee3a83de9bc451144908f1a741ed3a55,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee3a83de9bc451144908f1a741ed3a55, type: 3}
@@ -1916,11 +1936,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2515581257003032298, guid: e20e24cc4f84c264587478861e481830,
-        type: 3}
-      propertyPath: interactionType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2522280777366457695, guid: e20e24cc4f84c264587478861e481830,
         type: 3}
       propertyPath: deathType
@@ -1956,6 +1971,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515581257003032298, guid: e20e24cc4f84c264587478861e481830,
+        type: 3}
+      propertyPath: interactionType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e20e24cc4f84c264587478861e481830, type: 3}
@@ -2032,6 +2052,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2462474468955992598, guid: a02f93032ad5b4248842dca789b3c07f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 2462474468955992598, guid: a02f93032ad5b4248842dca789b3c07f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.16
+      objectReference: {fileID: 0}
     - target: {fileID: 1363534968114509855, guid: a02f93032ad5b4248842dca789b3c07f,
         type: 3}
       propertyPath: levelToLoad
@@ -2051,16 +2081,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 2.3202767
-      objectReference: {fileID: 0}
-    - target: {fileID: 2462474468955992598, guid: a02f93032ad5b4248842dca789b3c07f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 2462474468955992598, guid: a02f93032ad5b4248842dca789b3c07f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a02f93032ad5b4248842dca789b3c07f, type: 3}
