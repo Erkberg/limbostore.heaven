@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1.1 - Stromschlag
   m_EditorClassIdentifier: 
   title: Electric shock
-  description: I buzzed, but you went for it. This was definitely worse than that
+  description: It sparkled, but you went for it. This was definitely worse than that
     car battery.
   textDelay: 1
   deathClip: {fileID: 8300000, guid: 801a4c406ce15f244b6fe6a2fc58191d, type: 3}
