@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Death by food
   description: You really thought you could eat five of those?
-  textDelay: 1
+  textDelay: 3
   deathClip: {fileID: 8300000, guid: 6785b6bb223412142b78b5df251fe96e, type: 3}
   rewardFirstDeath: 500
   rewardDefault: 10

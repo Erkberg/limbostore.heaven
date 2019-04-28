@@ -48,6 +48,8 @@ MonoBehaviour:
   interactionType: 1
   sequenceType: 6
   particles: {fileID: 5962226734487961551}
+  neededSkill: 5
+  neededCollectable: 0
 --- !u!61 &2755405629759775882
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61,7 +63,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.45220745, y: 0.44693696}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -72,7 +74,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 7.627162, y: 3.5546257}
   m_EdgeRadius: 0
 --- !u!1001 &7430592298544924499
 PrefabInstance:
@@ -89,12 +91,12 @@ PrefabInstance:
     - target: {fileID: 5286883550385867423, guid: 8bfd14aa1e9fe864ea592052bf790b93,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.01
+      value: -0.74
       objectReference: {fileID: 0}
     - target: {fileID: 5286883550385867423, guid: 8bfd14aa1e9fe864ea592052bf790b93,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.89
+      value: -2.28
       objectReference: {fileID: 0}
     - target: {fileID: 5286883550385867423, guid: 8bfd14aa1e9fe864ea592052bf790b93,
         type: 3}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Death by sunburn
   description: You just wanted to get a bit of a tan.
-  textDelay: 1
+  textDelay: 4.8
   deathClip: {fileID: 8300000, guid: 2db72cc49ac9d2946bc50f3e1e5b7705, type: 3}
   rewardFirstDeath: 420
   rewardDefault: 8
