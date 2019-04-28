@@ -220,6 +220,21 @@ PrefabInstance:
       propertyPath: far clip plane
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 2654598998240507655, guid: 0b2d5d7fc2078754685bec113f60b388,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654598998240507655, guid: 0b2d5d7fc2078754685bec113f60b388,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654598998240507655, guid: 0b2d5d7fc2078754685bec113f60b388,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b2d5d7fc2078754685bec113f60b388, type: 3}
 --- !u!1001 &3639012662458919668
@@ -242,12 +257,12 @@ PrefabInstance:
     - target: {fileID: 3639012661080299698, guid: 21a69b2406a81ff4db5d99490d5633d8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 10.81
       objectReference: {fileID: 0}
     - target: {fileID: 3639012661080299698, guid: 21a69b2406a81ff4db5d99490d5633d8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3639012661080299698, guid: 21a69b2406a81ff4db5d99490d5633d8,
         type: 3}
