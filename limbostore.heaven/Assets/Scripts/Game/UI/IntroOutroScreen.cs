@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Game;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class IntroOutroScreen : MonoBehaviour
 {
@@ -10,90 +8,78 @@ public class IntroOutroScreen : MonoBehaviour
     public Type type;
 
     public Canvas canvas;
-    public CanvasGroup selfGroup;
-
-    public TMP_Text[] blocks;
+    public Animator animator;
+    public TMP_Text StatsText;
+    
     public AudioSource audioSource;
-
-    private bool isActive = false;
-    private bool skip = false;
-    private float waitTimePerText = 4f;
-
+    public bool isActive = true;
+    public bool inMainMenu = true;
+    
     private void Start()
     {
-        foreach (TMP_Text block in blocks)
-        {
-            block.alpha = 0f;
-        }
-
         if(type == Type.Intro)
-        {
-            PlayBlocks();
-        }
+            Show();
     }
 
     private void Update()
     {
-        if (isActive)
+        if (isActive && type == Type.Intro)
         {
             if (Input.anyKeyDown)
             {
-                skip = true;
+                if (inMainMenu)
+                {
+                    animator.SetBool("MainMenu", false);                    
+                }
+                else
+                {
+                    animator.SetTrigger("Skip");
+                }
+            }
+        } else if (isActive && type == Type.Outro)
+        {
+            if (Input.anyKeyDown)
+            {
+                isActive = false;
+                animator.SetBool("MainMenu", false);
             }
         }
     }
 
-    public void PlayBlocks()
+    public void ExitMainMenu()
     {
-        StartCoroutine(PlayBlocksSequence());
+        inMainMenu = false;
     }
 
-    public IEnumerator PlayBlocksSequence()
+    public void Show()
     {
         GameManager.Current.SetPlayerLocked(true);
-        ShowText();
-        float counter = 0f;
+        animator.SetBool("MainMenu", true);
+        canvas.enabled = true;
+        isActive = true;
+    }
 
-        foreach(TMP_Text block in blocks)
-        {
-            block.alpha = 1f;
-            counter = 0f;
+    public void SetupStatistics()
+    {
+        if (StatsText == null)
+            return;
+        StatsText.SetText(GameManager.Current.currency.ToString());
+    }
 
-            while (counter < waitTimePerText)
-            {
-                counter += Time.deltaTime;
-                if(skip)
-                {
-                    skip = false;
-                    break;
-                }
-                yield return null;
-            }
-        }
-
-        yield return new WaitUntil(() => skip);
-        Close();
+    public void AnimationDone()
+    {
+        isActive = false;
         GameManager.Current.SetPlayerLocked(false);
     }
 
-    public void DisplayDeathType(DeathType type, bool firstTimeDeath)
+    public void ReloadGame()
     {
-        
-        if(type.deathClip != null)
-            audioSource.PlayOneShot(type.deathClip);
-        
-        Invoke(nameof(ShowText), type.textDelay);
-    }
-
-    void ShowText()
-    {
-        canvas.enabled = true;
-        isActive = true;
+        SceneManager.LoadScene(0);
     }
 
     public void Close()
     {
         canvas.enabled = false;
-        isActive = false;
+        Destroy(this);
     }
 }

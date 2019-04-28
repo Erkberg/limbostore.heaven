@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     #endif
 
     public DeathScreen deathScreen;
+    public IntroOutroScreen outroScreen;
 
     public bool PlayerLocked
     {
@@ -58,6 +59,11 @@ public class GameManager : MonoBehaviour
     public void SetPlayerLocked(bool locked)
     {
         PlayerLocked = locked;
+    }
+
+    public void EndGame()
+    {
+        outroScreen.Show();
     }
     
     void Awake()
@@ -117,6 +123,10 @@ public class GameManagerEditor : Editor
         if (GUILayout.Button("Get Money"))
         {
             manager.currency.AddDeath(manager.cheatDeathType);
+        }
+        if (GUILayout.Button("End Game"))
+        {
+            manager.EndGame();
         }
     }
 }

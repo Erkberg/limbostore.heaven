@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using Game;
 using UnityEngine;
 
 public class CurrencyManager
 {
     private int availableCurrency = 0;
+    private int totalCurrency = 0;
     private Dictionary<DeathType, int> deaths = new Dictionary<DeathType, int>();
     
     public CurrencyManager()
@@ -48,11 +50,13 @@ public class CurrencyManager
         {
             deaths.Add(type, 1);
             availableCurrency += type.rewardFirstDeath;
+            totalCurrency += type.rewardFirstDeath;
         }
         else
         {
             deaths[type]++;
             availableCurrency += type.rewardDefault;
+            totalCurrency += type.rewardDefault;
         }
     }
 
@@ -65,6 +69,18 @@ public class CurrencyManager
         }
 
         return deathCount;
+    }
+
+    public override string ToString()
+    {
+        StringBuilder builder = new StringBuilder();
+        builder.Append("You died " + this.GetTotalDeathCount() + " times.<br>");
+        builder.Append("You received " + totalCurrency.ToString("N0") + " lives.<br><br>");
+        foreach (var pair in deaths)
+        {
+            builder.Append(pair.Value + " x " + pair.Key.title + "<br>");
+        }
+        return builder.ToString();
     }
 
 #if UNITY_EDITOR
