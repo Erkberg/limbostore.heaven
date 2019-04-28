@@ -16,6 +16,6 @@ MonoBehaviour:
   description: You fell into the water and tried to swim. But those movements did
     not help you.
   textDelay: 3
-  deathClip: {fileID: 8300000, guid: 3a2ef29c17a996241823d006eb7ad9a6, type: 3}
+  deathClip: {fileID: 8300000, guid: 0f069dbadd5e15846a018cd8e4ef9856, type: 3}
   rewardFirstDeath: 400
   rewardDefault: 9
