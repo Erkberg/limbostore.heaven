@@ -16,5 +16,5 @@ MonoBehaviour:
   description: You really thought you could eat five of those?
   textDelay: 1
   deathClip: {fileID: 0}
-  rewardFirstDeath: 450
-  rewardDefault: 4
+  rewardFirstDeath: 500
+  rewardDefault: 10

@@ -5870,6 +5870,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 8.958
       objectReference: {fileID: 0}
+    - target: {fileID: 2835692533410959257, guid: 3eb29f884c36f224495a1ec6c0bf7c0e,
+        type: 3}
+      propertyPath: collectableName
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2835692533410959258, guid: 3eb29f884c36f224495a1ec6c0bf7c0e,
         type: 3}
       propertyPath: m_Offset.x
@@ -5889,6 +5894,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 2.0601044
+      objectReference: {fileID: 0}
+    - target: {fileID: 5539980585675957339, guid: 3eb29f884c36f224495a1ec6c0bf7c0e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5539980585675957339, guid: 3eb29f884c36f224495a1ec6c0bf7c0e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009523582604143407, guid: 3eb29f884c36f224495a1ec6c0bf7c0e,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 117033075
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009523582604143407, guid: 3eb29f884c36f224495a1ec6c0bf7c0e,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eb29f884c36f224495a1ec6c0bf7c0e, type: 3}

@@ -3,9 +3,7 @@ using UnityEngine;
 
 public class CollectablesManager
 {
-    #if UNITY_EDITOR
     public bool hasAllCollectables = false;
-    #endif
     
     private List<CollectableName> collectables = new List<CollectableName>();
     

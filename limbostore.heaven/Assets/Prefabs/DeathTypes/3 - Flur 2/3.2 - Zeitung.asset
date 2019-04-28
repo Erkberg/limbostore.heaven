@@ -16,5 +16,5 @@ MonoBehaviour:
   description: 
   textDelay: 1
   deathClip: {fileID: 0}
-  rewardFirstDeath: 240
+  rewardFirstDeath: 280
   rewardDefault: 4

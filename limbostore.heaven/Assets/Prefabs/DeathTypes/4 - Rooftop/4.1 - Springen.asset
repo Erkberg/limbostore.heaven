@@ -16,5 +16,5 @@ MonoBehaviour:
   description: You fell into the ground.
   textDelay: 1
   deathClip: {fileID: 0}
-  rewardFirstDeath: 350
-  rewardDefault: 6
+  rewardFirstDeath: 450
+  rewardDefault: 11
