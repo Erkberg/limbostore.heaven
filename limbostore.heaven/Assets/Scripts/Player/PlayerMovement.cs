@@ -75,8 +75,10 @@ public class PlayerMovement : MonoBehaviour
         {
             movementAmount *= sneakMultiplier;
         }
-        
-        //CheckRunning(ref movementAmount);
+        else
+        {
+            CheckRunning(ref movementAmount);    
+        }
         //CheckSneaking(ref movementAmount);
 
         rb.velocity = movementAmount * moveSpeed;
@@ -90,18 +92,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckRunning(ref Vector2 movementAmount)
     {
-        if(GameManager.Current.skillz.CanDo(SkillType.Run))
+        if(Input.GetButton(InputStrings.RunButton))
         {
-            if(Input.GetButton(InputStrings.RunButton))
-            {
-                SetRunning(true);
-                isRunning = true;
-                movementAmount *= runMultiplier;
-            }
-            else
-            {
-                SetRunning(false);
-            }
+            SetRunning(true);
+            isRunning = true;
+            movementAmount *= runMultiplier;
         }
         else
         {

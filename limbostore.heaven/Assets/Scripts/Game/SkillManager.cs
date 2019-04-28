@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace Game
 {
     public class SkillManager
@@ -16,6 +18,7 @@ namespace Game
 
         public bool CanDo(SkillType skillType)
         {
+            Debug.Log(skillType);
             if(skillType == SkillType.None)
             {
                 return true;
