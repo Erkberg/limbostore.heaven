@@ -15,8 +15,6 @@ public class DeathByDoingNothing : MonoBehaviour
     {
         if (GameManager.Current.PlayerLocked)
             return;
-
-        Debug.Log(Mathf.Abs(Input.GetAxis(InputStrings.HorizontalAxis)));
         
         if (Input.anyKey)
         {

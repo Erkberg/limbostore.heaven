@@ -8,6 +8,8 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Current.PlayerLocked)
+            return;
         if(Input.GetButtonDown(InputStrings.InteractButton) && !GameManager.Current.PlayerLocked)
         {
             if(currentInteractionArea)

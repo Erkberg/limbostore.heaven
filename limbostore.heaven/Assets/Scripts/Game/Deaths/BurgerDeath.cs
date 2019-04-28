@@ -27,4 +27,9 @@ public class BurgerDeath : MonoBehaviour, ICustomDeath
             Destroy(burger);
         }
     }
+
+    public bool CanTrigger()
+    {
+        return true;
+    }
 }

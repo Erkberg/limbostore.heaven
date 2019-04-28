@@ -784,7 +784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cheatDeathType: {fileID: 11400000, guid: b4c2e1b9dbc15b145852ba5b4264b75c, type: 2}
-  NeverDie: 1
+  NeverDie: 0
   deathScreen: {fileID: 1426023696}
   outroScreen: {fileID: 367451808}
   levelManager: {fileID: 207858049}

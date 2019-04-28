@@ -94,6 +94,10 @@ public class GameManager : MonoBehaviour
                 skillz.AddSkill((SkillType) i);
             }
             currency.AddDeath(cheatDeathType);
+            for (int i = 0; i < System.Enum.GetNames(typeof(CollectableName)).Length; i++)
+            {
+                collectables.AddCollectable((CollectableName) i);
+            }
             collectables.hasAllCollectables = true;
         }
         #endif
