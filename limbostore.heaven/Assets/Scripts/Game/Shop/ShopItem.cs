@@ -27,7 +27,7 @@ public class ShopItem : MonoBehaviour
         }
         else
         {
-            CostTextElement.SetText(skillCost.ToString("N0") + " deaths");
+            CostTextElement.SetText(skillCost.ToString("N0"));
             soldImage.enabled = false;
             if (GameManager.Current.currency.CanAfford(skillCost))
             {
@@ -59,7 +59,10 @@ public class ShopItem : MonoBehaviour
         if(GameManager.Current.currency.CanAfford(skillCost))
             Shop.Current.BuySkill(this);
         else
+        {
             Debug.LogError("Cant afford " + skillType);
+            animator.SetTrigger("PurchaseFailed");
+        }
     }
 
     public void PurchaseSucceeded()
