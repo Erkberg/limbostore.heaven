@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NeighborMusic : MonoBehaviour
 {
-    private AudioSource loudSource, quietSource;
+    public AudioSource loudSource, quietSource;
 
     void Start()
     {
