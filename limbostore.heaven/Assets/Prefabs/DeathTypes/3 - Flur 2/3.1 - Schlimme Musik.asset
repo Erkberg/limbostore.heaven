@@ -16,6 +16,6 @@ MonoBehaviour:
   description: 'Your neighbor always said: "Someday, my kid will be the best at playing
     the violine." You have a different opinion.'
   textDelay: 1
-  deathClip: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: 2de02fedbe8498348985e0382d8b3c46, type: 3}
   rewardFirstDeath: 290
   rewardDefault: 6
