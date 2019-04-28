@@ -1,10 +1,11 @@
-﻿using UnityEngine.Events;
+﻿using System;
+using UnityEngine.Events;
 
 public class EventManager
 {
     public enum EventType
     {
-        None, NewGame, GameIsStarting, Death, NewSkill, PauseGame, ResumeGame, NewCollectable
+        None, NewGame, GameIsStarting, Death, NewSkill, PauseGame, ResumeGame, NewCollectable, Sneak, Move
     }
 
     public EventType lastEvent = EventType.None;
@@ -16,6 +17,9 @@ public class EventManager
     public UnityEvent Death = new UnityEvent();
     public UnityEvent NewSkill = new UnityEvent();
     public UnityEvent NewCollectable = new UnityEvent();
+    
+    public UnityEvent Sneak = new UnityEvent();
+    public UnityEvent StopSneak = new UnityEvent();
 
     public EventManager()
     {
@@ -48,6 +52,12 @@ public class EventManager
                 break;
             case EventType.NewCollectable:
                 NewCollectable.Invoke();
+                break;
+            case EventType.Sneak:
+                Sneak.Invoke();
+                break;
+            case EventType.Move:
+                StopSneak.Invoke();
                 break;
         }
     }

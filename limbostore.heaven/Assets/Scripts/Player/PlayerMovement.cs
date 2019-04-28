@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
         startingRotation = transform.rotation;
         GameManager.Current.events.Death.AddListener(PlayerDeath);
         GameManager.Current.events.NewGame.AddListener(Reset);
+        GameManager.Current.events.Sneak.AddListener(() => SetSneaking(true));
+        GameManager.Current.events.StopSneak.AddListener(() => SetSneaking(false));
     }
 
     void PlayerDeath()
@@ -67,10 +69,15 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontal = Input.GetAxis(InputStrings.HorizontalAxis);
         float vertical = Input.GetAxis(InputStrings.VerticalAxis);
-        Vector2 movementAmount = new Vector2(horizontal, vertical);
+        Vector2 movementAmount = new Vector2(horizontal, vertical).normalized;
 
-        CheckRunning(ref movementAmount);
-        CheckSneaking(ref movementAmount);
+        if (isSneaking)
+        {
+            movementAmount *= sneakMultiplier;
+        }
+        
+        //CheckRunning(ref movementAmount);
+        //CheckSneaking(ref movementAmount);
 
         rb.velocity = movementAmount * moveSpeed;
     }
