@@ -15,6 +15,7 @@ public class CurrencyManager
     }
 
     public int Amount => availableCurrency;
+    public int TotalAmount => totalCurrency;
     
     /// <summary>
     /// checks if you can afford the item that costs a amount of money
