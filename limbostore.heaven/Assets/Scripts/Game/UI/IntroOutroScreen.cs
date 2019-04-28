@@ -57,6 +57,7 @@ public class IntroOutroScreen : MonoBehaviour
         animator.SetBool("MainMenu", true);
         canvas.enabled = true;
         isActive = true;
+        SetupStatistics();
     }
 
     public void SetupStatistics()
