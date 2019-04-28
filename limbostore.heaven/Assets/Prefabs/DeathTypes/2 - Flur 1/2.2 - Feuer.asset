@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
   m_Name: 2.2 - Feuer
   m_EditorClassIdentifier: 
-  title: "Zu Tode Gesch\xE4mt"
-  description: 
+  title: Death By Fire
+  description: Those flickering lights were so faszinating yet so hot.
   textDelay: 1
   deathClip: {fileID: 0}
   rewardFirstDeath: 90

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
   m_Name: 3.2 - Zeitung
   m_EditorClassIdentifier: 
-  title: Gruseliger Film
-  description: 
+  title: Bad news in the paper
+  description: Those polititians always make you mad. So mad that your whole head
+    exploded.
   textDelay: 1
   deathClip: {fileID: 0}
   rewardFirstDeath: 280

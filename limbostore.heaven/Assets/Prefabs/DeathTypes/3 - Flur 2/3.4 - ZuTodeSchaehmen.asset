@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
   m_Name: 3.4 - ZuTodeSchaehmen
   m_EditorClassIdentifier: 
-  title: "Zu Tode Gesch\xE4mt"
-  description: 
+  title: Shamed to Death
+  description: You saw it in the movies. You thought that this would never hapen to
+    you. The you slipped.
   textDelay: 1
   deathClip: {fileID: 0}
   rewardFirstDeath: 250

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef089c04fa94c89b705d886fb8a262f, type: 3}
   m_Name: 2.5 - Lustiger Film
   m_EditorClassIdentifier: 
-  title: Lustiger Film
-  description: 
+  title: Funny Movie
+  description: 'Tears cam out your eyes. You fell from your sofa, because you were
+    laughing so hard. '
   textDelay: 1
   deathClip: {fileID: 0}
   rewardFirstDeath: 90
