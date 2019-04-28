@@ -63,6 +63,10 @@ public class PlayerMovement : MonoBehaviour
                 isMoving = false;
             }
         }
+        else
+        {
+            rb.velocity = Vector2.zero;
+        }
     }
 
     private void Move()

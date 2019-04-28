@@ -5,7 +5,7 @@ public class ScoreUI : MonoBehaviour
 {
     public TMP_Text textElement;
 
-    private int count = 0;
+    private int count = -1;
     
     void Update()
     {
