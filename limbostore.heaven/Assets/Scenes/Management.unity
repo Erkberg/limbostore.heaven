@@ -1011,6 +1011,9 @@ MonoBehaviour:
   outroScreen: {fileID: 367451808}
   source: {fileID: 1875047245}
   collectableSound: {fileID: 8300000, guid: d04b7e6f80673354a870e063ef69d17e, type: 3}
+  doorSound: {fileID: 8300000, guid: 3ea79d947a3b0224c99b48533ffeb643, type: 3}
+  elevatorSound: {fileID: 8300000, guid: 62e6e008a8ec88c48877c6a1e7157de3, type: 3}
+  treppeSound: {fileID: 8300000, guid: 31aae5a99ef8f8840b623ab7b708af4c, type: 3}
   levelManager: {fileID: 207858049}
 --- !u!4 &1320698218
 Transform:
