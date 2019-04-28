@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BurgerDeath : MonoBehaviour, ICustomDeath
 {
+    public AudioSource source;
+    public AudioClip clip;
     public DeathType deathType;
     public GameObject[] burgers;
     
@@ -25,6 +27,7 @@ public class BurgerDeath : MonoBehaviour, ICustomDeath
             var burger = burgerList[Random.Range(0, burgerList.Count)];
             burgerList.Remove(burger);
             Destroy(burger);
+            source.PlayOneShot(clip);
         }
     }
 
