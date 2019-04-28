@@ -97,7 +97,7 @@ public class GameManagerEditor : Editor
         if (manager == null)
             return;
         
-        GUILayout.Label("Deaths: " + manager.currency.Amount.ToString("N0"));
+        GUILayout.Label("Currency: " + manager.currency.Amount.ToString("N0"));
         GUILayout.Label("Skills", EditorStyles.boldLabel);
         for (int i = 0; i < System.Enum.GetNames(typeof(SkillType)).Length; i++)
         {
@@ -106,6 +106,8 @@ public class GameManagerEditor : Editor
 
         GUILayout.Label("Deaths (" + manager.currency.GetTotalDeathCount() + ")", EditorStyles.boldLabel);
         manager.currency.PrintDeathsEditor();
+        GUILayout.Label("Collectables", EditorStyles.boldLabel);
+        manager.collectables.PrintEditor();
         
 
         if (GUILayout.Button("Open Shop"))

@@ -135,13 +135,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 24}
   m_textInfo:
     textComponent: {fileID: 6943359168813278152}
-    characterCount: 24
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 5
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -300,8 +300,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 50
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3478417554c90d745b6bad7ffc058d06, type: 2}
-  m_sharedMaterial: {fileID: 7703694706912844503, guid: 3478417554c90d745b6bad7ffc058d06,
+  m_fontAsset: {fileID: 11400000, guid: 004c19e395c9e774199c709aaf21003f, type: 2}
+  m_sharedMaterial: {fileID: -2787421079887725803, guid: 004c19e395c9e774199c709aaf21003f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -368,13 +368,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 5028367243892690924}
-    characterCount: 2
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 1
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -847,8 +847,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Title
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3478417554c90d745b6bad7ffc058d06, type: 2}
-  m_sharedMaterial: {fileID: 7703694706912844503, guid: 3478417554c90d745b6bad7ffc058d06,
+  m_fontAsset: {fileID: 11400000, guid: 004c19e395c9e774199c709aaf21003f, type: 2}
+  m_sharedMaterial: {fileID: -2787421079887725803, guid: 004c19e395c9e774199c709aaf21003f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -915,13 +915,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 8516242008727372487}
-    characterCount: 5
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 1
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -1005,8 +1005,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Description of Death
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3478417554c90d745b6bad7ffc058d06, type: 2}
-  m_sharedMaterial: {fileID: 7703694706912844503, guid: 3478417554c90d745b6bad7ffc058d06,
+  m_fontAsset: {fileID: 11400000, guid: 004c19e395c9e774199c709aaf21003f, type: 2}
+  m_sharedMaterial: {fileID: -2787421079887725803, guid: 004c19e395c9e774199c709aaf21003f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1073,13 +1073,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 8516242008947440607}
-    characterCount: 20
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 2
-    wordCount: 3
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0

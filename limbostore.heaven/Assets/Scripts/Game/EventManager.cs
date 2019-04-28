@@ -14,8 +14,8 @@ public class EventManager
     public UnityEvent PauseGame = new UnityEvent();
     public UnityEvent ResumeGame = new UnityEvent();
     public UnityEvent Death = new UnityEvent();
-    public UnityEvent<string> NewSkill;
-    public UnityEvent<string> NewCollectable;
+    public UnityEvent NewSkill = new UnityEvent();
+    public UnityEvent NewCollectable = new UnityEvent();
 
     public EventManager()
     {
@@ -35,7 +35,7 @@ public class EventManager
                 Death.Invoke();
                 break;
             case EventType.NewSkill:
-                NewSkill.Invoke(value);
+                NewSkill.Invoke();
                 break;
             case EventType.GameIsStarting:
                 GameIsStarting.Invoke();
@@ -47,7 +47,7 @@ public class EventManager
                 ResumeGame.Invoke();
                 break;
             case EventType.NewCollectable:
-                NewCollectable.Invoke(value);
+                NewCollectable.Invoke();
                 break;
         }
     }

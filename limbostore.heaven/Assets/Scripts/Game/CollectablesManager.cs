@@ -26,6 +26,17 @@ public class CollectablesManager
             GameManager.Current.events.TriggerEvent(EventManager.EventType.NewCollectable, collectableName.ToString());
         }
     }
+    
+    #if UNITY_EDITOR
+
+    public void PrintEditor()
+    {
+        foreach (var item in collectables)
+        {
+            GUILayout.Label(item.ToString());
+        }
+    }
+    #endif
 }
 
 public enum CollectableName

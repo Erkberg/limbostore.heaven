@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64923e6d7441f6409e384f0a3d21146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToStart: Room
+  sceneToStart: 1 - Room
   currentLevel: 
   mainScenes:
   - Main
@@ -903,6 +903,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8516242007737684854, guid: 2109336474719ed44b171ab998d37b5a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8516242008727372486, guid: 2109336474719ed44b171ab998d37b5a,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -956,11 +961,6 @@ PrefabInstance:
     - target: {fileID: 8516242008947440606, guid: 2109336474719ed44b171ab998d37b5a,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8516242007737684854, guid: 2109336474719ed44b171ab998d37b5a,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7981458820506295303, guid: 2109336474719ed44b171ab998d37b5a,

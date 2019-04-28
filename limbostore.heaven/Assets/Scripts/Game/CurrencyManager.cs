@@ -5,7 +5,7 @@ using UnityEngine;
 public class CurrencyManager
 {
     private int availableCurrency = 0;
-    private Dictionary<string, int> deaths = new Dictionary<string, int>();
+    private Dictionary<DeathType, int> deaths = new Dictionary<DeathType, int>();
     
     public CurrencyManager()
     {
@@ -39,18 +39,19 @@ public class CurrencyManager
 
     public int GetDeathCount(DeathType type)
     {
-        return !deaths.ContainsKey(type.name) ? 0 : deaths[type.name];
+        return !deaths.ContainsKey(type) ? 0 : deaths[type];
     }
 
     public void AddDeath(DeathType type)
     {
-        if (!deaths.ContainsKey(type.name))
+        if (!deaths.ContainsKey(type))
         {
-            deaths.Add(type.name, 1);
+            deaths.Add(type, 1);
             availableCurrency += type.rewardFirstDeath;
         }
         else
         {
+            deaths[type]++;
             availableCurrency += type.rewardDefault;
         }
     }
@@ -69,10 +70,26 @@ public class CurrencyManager
 #if UNITY_EDITOR
     public void PrintDeathsEditor()
     {
+        GUILayout.BeginHorizontal();
+        GUILayout.BeginVertical();
         foreach (var pair in deaths)
         {
-            GUILayout.Label(pair.Key + ": " + pair.Value.ToString("N0"));
+            GUILayout.Label(pair.Key.name);
         }
+        GUILayout.EndVertical();
+        GUILayout.BeginVertical();
+        foreach (var pair in deaths)
+        {
+            GUILayout.Label(pair.Key.title);
+        }
+        GUILayout.EndVertical();
+        GUILayout.BeginVertical();
+        foreach (var pair in deaths)
+        {
+            GUILayout.Label(pair.Value.ToString("N0"));
+        }
+        GUILayout.EndVertical();
+        GUILayout.EndHorizontal();
     }
 #endif
 
