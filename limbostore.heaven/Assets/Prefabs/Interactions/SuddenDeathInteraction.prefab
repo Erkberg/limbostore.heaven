@@ -49,6 +49,8 @@ MonoBehaviour:
   interactionType: 0
   sequenceType: 0
   particles: {fileID: 6447909577728044258}
+  neededSkill: 5
+  neededCollectable: 0
 --- !u!114 &2522280777366457695
 MonoBehaviour:
   m_ObjectHideFlags: 0

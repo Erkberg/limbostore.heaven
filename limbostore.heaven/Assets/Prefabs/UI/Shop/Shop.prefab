@@ -171,9 +171,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 4944627788854221230}
-  open: {fileID: 0}
-  close: {fileID: 0}
-  buy: {fileID: 8300000, guid: d04b7e6f80673354a870e063ef69d17e, type: 3}
+  open: {fileID: 8300000, guid: 94b452203f363264dab6b17bfdf28610, type: 3}
+  close: {fileID: 8300000, guid: 94b452203f363264dab6b17bfdf28610, type: 3}
+  buy: {fileID: 8300000, guid: feabecbaea1cf70438a75c2c62b7c776, type: 3}
   swipe: {fileID: 8300000, guid: edf8d190001b34e4a9829fe1e910b2e4, type: 3}
   failed: {fileID: 0}
   shopItems:

@@ -19,6 +19,7 @@ public class CollectablesManager
     {
         if (!collectables.Contains(collectableName))
         {
+            GameManager.Current.PlayCollectableSound();
             Debug.Log("just collected " + collectableName.ToString());
             collectables.Add(collectableName);
             GameManager.Current.events.TriggerEvent(EventManager.EventType.NewCollectable, collectableName.ToString());

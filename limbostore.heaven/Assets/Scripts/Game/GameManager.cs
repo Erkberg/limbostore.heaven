@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public DeathScreen deathScreen;
     public IntroOutroScreen outroScreen;
 
+    public AudioSource source;
+    public AudioClip collectableSound;
+
     public bool PlayerLocked
     {
         get;
@@ -51,6 +54,26 @@ public class GameManager : MonoBehaviour
         
         deathScreen.DisplayDeathType(deathType, isFirstDeath);
         PlayerLocked = true;
+        
+    }
+
+    public void PlayCollectableSound()
+    {
+        source.PlayOneShot(collectableSound);   
+    }
+
+    public void PlayDoorSound()
+    {
+        
+    }
+
+    public void PlayTreppeSound()
+    {
+        
+    }
+
+    public void PlayAufzugSound()
+    {
         
     }
 
