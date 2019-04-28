@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Scary Movie
   description: He turned. He couldn't look. He grasped for air. It was dead silent.
     Suddenly it jumped towards him. Everything after that is a story for your nightmares.
-  textDelay: 1.2
+  textDelay: 0.001
   deathClip: {fileID: 8300000, guid: c33ee50c8acec9d4e96ce2cff0fd4011, type: 3}
   rewardFirstDeath: 350
   rewardDefault: 5
