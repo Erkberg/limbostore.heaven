@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 9046812429239116995}
   - component: {fileID: 2515581257003032298}
   - component: {fileID: 3577475019837426832}
-  - component: {fileID: 3865525405892750896}
-  - component: {fileID: 4250833559766356935}
+  - component: {fileID: 398808229239647712}
   m_Layer: 0
   m_Name: Zerkuschelt Death Interaction
   m_TagString: Untagged
@@ -66,34 +65,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puppys: {fileID: 0}
   deathType: {fileID: 11400000, guid: 044dcf31b6232c947b661e5d564579cb, type: 2}
---- !u!61 &3865525405892750896
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92659443689218742}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.84280014, y: -0.77537584}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.573469, y: 4.7083216}
-  m_EdgeRadius: 0
---- !u!61 &4250833559766356935
-BoxCollider2D:
+--- !u!60 &398808229239647712
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -115,9 +88,14 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 8.077496, y: 2.4748993}
+      - {x: 3.2003164, y: 2.4093628}
+      - {x: -4.3388395, y: 0.066495895}
+      - {x: -4.3322077, y: -2.129301}
+      - {x: 2.5131989, y: -3.1598444}
+      - {x: 10.303606, y: -3.0676098}
 --- !u!1001 &5903545435669696799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -183,6 +161,11 @@ PrefabInstance:
     - target: {fileID: 5286883550385867423, guid: 8bfd14aa1e9fe864ea592052bf790b93,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3864319324759783580, guid: 8bfd14aa1e9fe864ea592052bf790b93,
+        type: 3}
+      propertyPath: particles.Array.size
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
