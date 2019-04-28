@@ -175,7 +175,7 @@ MonoBehaviour:
   close: {fileID: 8300000, guid: 94b452203f363264dab6b17bfdf28610, type: 3}
   buy: {fileID: 8300000, guid: feabecbaea1cf70438a75c2c62b7c776, type: 3}
   swipe: {fileID: 8300000, guid: edf8d190001b34e4a9829fe1e910b2e4, type: 3}
-  failed: {fileID: 0}
+  failed: {fileID: 8300000, guid: d6d40684db4f5984f8bd49e3ab1b4d76, type: 3}
   shopItems:
   - {fileID: 4541618449240768263}
   - {fileID: 2117628457868577109}

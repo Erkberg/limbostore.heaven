@@ -38,7 +38,9 @@ public class Shop : MonoBehaviour
         {
             item.Deselect();
         }
-
+        
+        source.PlayOneShot(close);
+        
         selfCanvas.enabled = false;
         EventSystem.current.SetSelectedGameObject(null);
 
