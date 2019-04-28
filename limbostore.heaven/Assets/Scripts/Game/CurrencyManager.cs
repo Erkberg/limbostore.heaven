@@ -81,6 +81,11 @@ public class CurrencyManager
         {
             builder.Append(pair.Value + " x " + pair.Key.title + "<br>");
         }
+
+        if (deaths.Count < 16)
+        {
+            builder.Append("But you didn't get <b>all</b> of them..");
+        }
         return builder.ToString();
     }
 
