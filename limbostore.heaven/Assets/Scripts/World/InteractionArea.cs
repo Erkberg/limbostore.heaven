@@ -43,7 +43,7 @@ public class InteractionArea : MonoBehaviour
                 baseDeathTrigger.TriggerDeath();
                 break;
             case SequenceType.SuddenDeathSkill:
-                BaseDeathTrigger skillDeathTrigger = GetComponent<BaseDeathTrigger>();
+                SkillDeathTrigger skillDeathTrigger = GetComponent<SkillDeathTrigger>();
                 skillDeathTrigger.TriggerDeath();
                 break;
             case SequenceType.SuddenDeathCollectable:
