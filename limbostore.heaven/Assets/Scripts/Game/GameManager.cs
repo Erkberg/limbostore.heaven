@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     #if UNITY_EDITOR
     public DeathType cheatDeathType;
+    public bool NeverDie = false;
     #endif
 
     public DeathScreen deathScreen;
@@ -37,12 +38,20 @@ public class GameManager : MonoBehaviour
     {
         if (PlayerLocked)
             return;
-        PlayerLocked = true;
-        bool isFirstDeath = currencyManager.GetDeathCount(deathType) == 0;
         
+        bool isFirstDeath = currencyManager.GetDeathCount(deathType) == 0;
         currencyManager.AddDeath(deathType);
-        deathScreen.DisplayDeathType(deathType, isFirstDeath);
+        
         events.TriggerEvent(EventManager.EventType.Death, deathType.name);
+        
+#if UNITY_EDITOR
+        if (NeverDie)
+            return;
+#endif
+        
+        deathScreen.DisplayDeathType(deathType, isFirstDeath);
+        PlayerLocked = true;
+        
     }
 
     public void Restart(float delayTime)

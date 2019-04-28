@@ -1,4 +1,4 @@
 public enum SkillType
 {
-    Open, Sneak, Kick, Swim, Run, None
+    Open, Sneak, Ohrstoepsel, Swim, Run, None
 }
