@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 1.2 - Schnulziger Film
   m_EditorClassIdentifier: 
   title: Cheesy movie
-  description: The movie about a cheesy musical was so moving. You cried yourself
-    to death.
+  description: The moment when they were singing to each other was so moving. Your
+    heart is melting.
   textDelay: 0.8
   deathClip: {fileID: 8300000, guid: 5cc8e298ab97bd548b0a72892346ee92, type: 3}
   rewardFirstDeath: 26

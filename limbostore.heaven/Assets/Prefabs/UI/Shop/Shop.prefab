@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 518052909068955762}
   - component: {fileID: 518052909068955765}
   - component: {fileID: 7227245329122279978}
-  - component: {fileID: 8126674435009363739}
+  - component: {fileID: 4944627788854221230}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -170,13 +170,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 936790e6f02d0fc4094948e0afc15c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 4944627788854221230}
+  open: {fileID: 0}
+  close: {fileID: 0}
+  buy: {fileID: 8300000, guid: d04b7e6f80673354a870e063ef69d17e, type: 3}
+  swipe: {fileID: 8300000, guid: edf8d190001b34e4a9829fe1e910b2e4, type: 3}
+  failed: {fileID: 0}
   shopItems:
   - {fileID: 4541618449240768263}
   - {fileID: 2117628457868577109}
   - {fileID: 3496017070205748285}
   - {fileID: 3496017069989561712}
   selfCanvas: {fileID: 518052909068955762}
---- !u!82 &8126674435009363739
+--- !u!82 &4944627788854221230
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1105,7 +1111,7 @@ PrefabInstance:
     - target: {fileID: 3496017071527868803, guid: 9fd5432117a5fd74e83578ff9d58fc11,
         type: 3}
       propertyPath: skillCost
-      value: 250
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 3496017071527868803, guid: 9fd5432117a5fd74e83578ff9d58fc11,
         type: 3}
@@ -1325,7 +1331,7 @@ PrefabInstance:
     - target: {fileID: 3496017071527868803, guid: 9fd5432117a5fd74e83578ff9d58fc11,
         type: 3}
       propertyPath: skillCost
-      value: 500
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 3496017071527868803, guid: 9fd5432117a5fd74e83578ff9d58fc11,
         type: 3}
