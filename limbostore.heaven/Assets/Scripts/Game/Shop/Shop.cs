@@ -5,7 +5,10 @@ using UnityEngine.UI;
 public class Shop : MonoBehaviour
 {
     public static Shop Current { private set; get; }
-    
+
+    public AudioSource source;
+    public AudioClip open, close, buy, swipe, failed;
+
     public ShopItem[] shopItems;
     public Canvas selfCanvas;
     
@@ -26,6 +29,7 @@ public class Shop : MonoBehaviour
 
         EventSystem.current.SetSelectedGameObject(shopItems[0].gameObject);
         shopItems[0].Select();
+        source.PlayOneShot(open);
     }
 
     public void CloseShop()
@@ -63,6 +67,8 @@ public class Shop : MonoBehaviour
         if (item.isSelected)
             return;
 
+        source.PlayOneShot(swipe);
+        
         foreach (var other in shopItems)
         {
             if(other == item)
@@ -76,12 +82,14 @@ public class Shop : MonoBehaviour
     {
         if (GameManager.Current.currency.Purchase(item.skillCost))
         {
+            source.PlayOneShot(buy);
             GameManager.Current.skillz.AddSkill(item.skillType);
             item.PurchaseSucceeded();
         }
         else
         {
-            Debug.LogError("Can not afford this item.");
+            source.PlayOneShot(failed);
+            Debug.Log("Can not afford this item.");
             item.PurchaseFailed();
         }
     }

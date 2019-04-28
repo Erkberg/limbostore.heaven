@@ -56,13 +56,7 @@ public class ShopItem : MonoBehaviour
 
     public void Click()
     {
-        if(GameManager.Current.currency.CanAfford(skillCost))
-            Shop.Current.BuySkill(this);
-        else
-        {
-            Debug.LogError("Cant afford " + skillType);
-            animator.SetTrigger("PurchaseFailed");
-        }
+        Shop.Current.BuySkill(this);
     }
 
     public void PurchaseSucceeded()
