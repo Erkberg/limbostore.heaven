@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Cheesy Movie
   description: The movie about a cheesy musical was so moving. You cried yourself
     to death.
-  textDelay: 1
+  textDelay: 0.8
   deathClip: {fileID: 8300000, guid: 5cc8e298ab97bd548b0a72892346ee92, type: 3}
   rewardFirstDeath: 26
   rewardDefault: 2

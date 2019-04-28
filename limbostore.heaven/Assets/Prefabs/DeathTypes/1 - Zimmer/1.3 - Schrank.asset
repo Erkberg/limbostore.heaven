@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Death By Knowledge
   description: Every book about anything ever happening fell on you.
-  textDelay: 3
+  textDelay: 2.3
   deathClip: {fileID: 8300000, guid: 4eacab1dfec4f4b458485b5383736aee, type: 3}
   rewardFirstDeath: 27
   rewardDefault: 2

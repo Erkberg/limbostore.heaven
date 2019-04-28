@@ -16,7 +16,7 @@ MonoBehaviour:
   description: Those cute puppies surrounded you and you couldn't do anything but
     to cuddle back. They never stopped. They became cuter and cuter. Eventually, you
     gave in.
-  textDelay: 1
+  textDelay: 2
   deathClip: {fileID: 8300000, guid: edaabe7c7a2b388468ee823e4c516d9e, type: 3}
   rewardFirstDeath: 95
   rewardDefault: 2

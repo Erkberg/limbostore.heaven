@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Bad news in the paper
   description: Those polititians always make you mad. So mad that your whole head
     exploded.
-  textDelay: 1
+  textDelay: 1.5
   deathClip: {fileID: 8300000, guid: d92a422dae4bb1a4ea08110339344c7f, type: 3}
   rewardFirstDeath: 280
   rewardDefault: 4
