@@ -15,6 +15,6 @@ MonoBehaviour:
   title: Bored to death
   description: You waited. And you waited. It took forever.
   textDelay: 1
-  deathClip: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: 1c3ebb824b965a24aafc9c08745f8ccd, type: 3}
   rewardFirstDeath: 20
   rewardDefault: 3
