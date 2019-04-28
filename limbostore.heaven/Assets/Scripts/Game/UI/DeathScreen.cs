@@ -16,7 +16,6 @@ public class DeathScreen : MonoBehaviour
     public Animator animator;
 
     private bool isActive = false;
-    
     private void Update()
     {
         if (isActive)
