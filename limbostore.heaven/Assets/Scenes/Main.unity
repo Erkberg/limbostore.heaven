@@ -120,6 +120,29 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1732690056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2654598998240507652, guid: 0b2d5d7fc2078754685bec113f60b388,
+    type: 3}
+  m_PrefabInstance: {fileID: 2654598998552088440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1732690057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732690056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b95aa1c22df027448bddf3ec214962b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circleColour: {r: 0.16862746, g: 0.29803923, b: 1, a: 1}
+  polygonColour: {r: 0.16862746, g: 0.29803923, b: 1, a: 1}
+  boxColour: {r: 0.16509432, g: 0.29710096, b: 1, a: 1}
+  edgeColour: {r: 0.16862746, g: 0.29803923, b: 1, a: 1}
+  jointColour: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1001 &2654598998552088440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131,6 +154,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MainCam
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654598998240507652, guid: 0b2d5d7fc2078754685bec113f60b388,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2654598998240507896, guid: 0b2d5d7fc2078754685bec113f60b388,
         type: 3}
@@ -205,6 +233,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639012661080299702, guid: 21a69b2406a81ff4db5d99490d5633d8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3639012661080299698, guid: 21a69b2406a81ff4db5d99490d5633d8,
         type: 3}
