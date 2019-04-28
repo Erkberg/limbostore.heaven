@@ -82,6 +82,11 @@ public class Shop : MonoBehaviour
 
     public void BuySkill(ShopItem item)
     {
+        if (GameManager.Current.skillz.CanDo(item.skillType))
+        {
+            source.PlayOneShot(failed);
+            item.PurchaseFailed();
+        }
         if (GameManager.Current.currency.Purchase(item.skillCost))
         {
             source.PlayOneShot(buy);
