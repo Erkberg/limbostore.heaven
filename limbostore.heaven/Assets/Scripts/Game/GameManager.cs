@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public IntroOutroScreen outroScreen;
 
     public AudioSource source;
-    public AudioClip collectableSound;
+    public AudioClip collectableSound, doorSound, elevatorSound, treppeSound;
 
     public bool PlayerLocked
     {
@@ -64,17 +64,18 @@ public class GameManager : MonoBehaviour
 
     public void PlayDoorSound()
     {
-        
+        source.PlayOneShot(doorSound);   
+
     }
 
     public void PlayTreppeSound()
     {
-        
+        source.PlayOneShot(treppeSound);   
     }
 
     public void PlayAufzugSound()
     {
-        
+        source.PlayOneShot(elevatorSound);   
     }
 
     public void Restart(float delayTime)
