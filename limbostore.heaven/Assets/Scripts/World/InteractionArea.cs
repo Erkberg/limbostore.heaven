@@ -55,16 +55,12 @@ public class InteractionArea : MonoBehaviour
                 Collectable collectable = GetComponent<Collectable>();
                 collectable.Collect();
                 break;
-
             case SequenceType.AnimationThenDeath:
-
                 break;
-
             case SequenceType.ChangeScene:
                 ChangeLevel changleLevel = GetComponent<ChangeLevel>();
                 changleLevel.LoadLevel();
                 break;
-
             case SequenceType.OpenShop:
                 Shop.Current.OpenShop();
                 break;
