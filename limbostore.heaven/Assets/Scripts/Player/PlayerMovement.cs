@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 startingPosition;
     private Quaternion startingRotation;
 
-    private void Awake()
+    private void Start()
     {
         startingPosition = transform.position;
         startingRotation = transform.rotation;
