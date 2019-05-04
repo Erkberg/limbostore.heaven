@@ -87,7 +87,7 @@ public class Shop : MonoBehaviour
             source.PlayOneShot(failed);
             item.PurchaseFailed();
         }
-        if (GameManager.Current.currency.Purchase(item.skillCost))
+        else if (GameManager.Current.currency.Purchase(item.skillCost))
         {
             source.PlayOneShot(buy);
             GameManager.Current.skillz.AddSkill(item.skillType);
